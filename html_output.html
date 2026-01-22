@@ -1,22 +1,455 @@
 
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
 <head>
-  <title>My Book</title>
+  <title>Test Mode</title>
   <style>
-    /* CSS for your book */
-    body { font-family: serif; }
-    p { text-indent: 1.5em; margin-bottom: 0; margin-top: 0; }
-    
-    /* 2. RUSSIAN WORD STYLING */
-    .ru {
-        font-weight: bold;       /* Makes it thick */
-        color: #3b5998;          /* A nice "Facebook Blue" - distinct but readable */
+    body { 
+        font-family: serif; 
+        line-height: 1.6; 
+        max-width: 800px; 
+        margin: 0 auto; 
+        padding: 20px; 
+        padding-bottom: 200px; /* Space for the popup */
     }
+    p { text-indent: 1.5em; margin: 0; }
+    
+    /* LINK STYLING */
+    a.ru {
+        color: #3b5998;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        border-bottom: 1px dotted #3b5998; /* Visual hint it's clickable */
+    }
+    a.ru:hover { background-color: #eaf2ff; }
+
+    /* HIDE FOOTNOTES (The data source) */
+    aside { display: none; }
+
+    /* THE FAKE POPUP BOX (For testing only) */
+    #test-popup {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 400px;
+        background: white;
+        border: 2px solid #3b5998;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        display: none; /* Hidden by default */
+        z-index: 1000;
+        font-family: sans-serif;
+    }
+    #test-popup h3 { margin-top: 0; color: #3b5998; }
   </style>
 </head>
 <body>
-<p>Mr and Mrs Dursley, of <span class="ru">номера</span> 4, Privet Drive, <span class="ru">были</span> proud to <span class="ru">сказать</span>, <span class="ru">что</span> <span class="ru">они</span> <span class="ru">были</span> <span class="ru">очень</span> <span class="ru">нормальными</span>, thank you very much. <span class="ru">Они</span> <span class="ru">были</span> the last <span class="ru">люди</span> you’d expect to <span class="ru">быть</span> involved <span class="ru">в</span> anything strange or mysterious, because <span class="ru">они</span> just <span class="ru">не</span> hold with such nonsense.<p><p>Mr Dursley <span class="ru">был</span> the director of a firm called Grunnings, which made drills. <span class="ru">Он</span> <span class="ru">был</span> a big, beefy <span class="ru">человек</span> with hardly any neck, although <span class="ru">он</span> did have a <span class="ru">очень</span> large moustache. Mrs Dursley <span class="ru">была</span> thin and blonde and had nearly twice the usual amount of neck, which came <span class="ru">в</span> <span class="ru">очень</span> useful as <span class="ru">она</span> spent so much of <span class="ru">своего</span> time craning over garden fences, spying on the neighbours. The Dursleys had a <span class="ru">маленького</span> son called Dudley and <span class="ru">в</span> <span class="ru">их</span> opinion there was no finer boy anywhere.<p><p>The Dursleys had everything they wanted, <span class="ru">но</span> <span class="ru">они</span> also had a secret, and <span class="ru">их</span> greatest fear <span class="ru">был</span> that somebody would discover <span class="ru">это</span>. <span class="ru">Они</span> <span class="ru">не</span> think <span class="ru">они</span> could bear <span class="ru">это</span> if anyone found out about the Potters. Mrs Potter <span class="ru">была</span> Mrs Dursley’s sister, <span class="ru">но</span> <span class="ru">они</span> <span class="ru">не</span> had met <span class="ru">для</span> several years; in fact, Mrs Dursley pretended <span class="ru">она</span> <span class="ru">не</span> had a sister, because her sister and her good-for-nothing husband were as unDursleyish as <span class="ru">это</span> <span class="ru">было</span> possible to <span class="ru">быть</span>. The Dursleys shuddered to think <span class="ru">что</span> the neighbours would <span class="ru">сказать</span> if the Potters arrived in the street. The Dursleys knew <span class="ru">что</span> the Potters had a <span class="ru">маленького</span> son, too, <span class="ru">но</span> <span class="ru">они</span> <span class="ru">не</span> had never even seen him. <span class="ru">Этот</span> boy <span class="ru">был</span> another good reason <span class="ru">для</span> keeping the Potters away; <span class="ru">они</span> <span class="ru">не</span> want Dudley mixing with a child like <span class="ru">что</span>.<p><p>When Mr and Mrs Dursley woke up on the dull, grey Tuesday our story starts, there was nothing about the cloudy sky outside to suggest that strange and mysterious things would soon be happening all over the country. Mr Dursley hummed as <span class="ru">он</span> picked out his most boring tie <span class="ru">для</span> work and Mrs Dursley gossiped away happily as <span class="ru">она</span> wrestled a screaming Dudley into his high chair.<p><p>None of <span class="ru">их</span> noticed a large tawny owl flutter past the window.<p><p>At half past eight, Mr Dursley picked up his briefcase, pecked Mrs Dursley on the cheek and tried to kiss Dudley goodbye <span class="ru">но</span> missed, because Dudley was now having a tantrum and throwing his cereal at the walls. ‘Little tyke,’ chortled Mr Dursley as <span class="ru">он</span> left the <span class="ru">дом</span>. <span class="ru">Он</span> got into his car and backed out of <span class="ru">номера</span> 4’s drive.<p><p>It <span class="ru">было</span> on the corner of the street <span class="ru">что</span> <span class="ru">он</span> noticed the first sign of something peculiar – a cat reading a map. <span class="ru">Для</span> a second, Mr Dursley <span class="ru">не</span> realise <span class="ru">что</span> <span class="ru">он</span> had seen – then <span class="ru">он</span> jerked his head around to look again. There <span class="ru">была</span> a tabby cat standing on the corner of Privet Drive, <span class="ru">но</span> there wasn’t a map in sight. <span class="ru">Что</span> could <span class="ru">он</span> have been thinking of? <span class="ru">Это</span> must have been a trick of the light. Mr Dursley blinked and stared at the cat. It stared back. As Mr Dursley drove around the corner and up the road, <span class="ru">он</span> watched the cat <span class="ru">в</span> his mirror. It <span class="ru">было</span> now reading the sign <span class="ru">что</span> said Privet Drive – <span class="ru">не</span>, looking at the sign; cats couldn’t read maps or signs. Mr Dursley gave himself a <span class="ru">маленького</span> shake and put the cat out of his mind. As <span class="ru">он</span> drove towards town <span class="ru">он</span> thought of nothing except a large order of drills <span class="ru">он</span> <span class="ru">был</span> hoping to get that day.<p>
+
+    <p>Mr and Mrs Dursley, of <a href="#ref_1" epub:type="noteref" class="ru">номера</a> 4, Privet Drive, <a href="#ref_2" epub:type="noteref" class="ru">были</a> proud to <a href="#ref_3" epub:type="noteref" class="ru">сказать</a>, <a href="#ref_4" epub:type="noteref" class="ru">что</a> <a href="#ref_5" epub:type="noteref" class="ru">они</a> <a href="#ref_6" epub:type="noteref" class="ru">были</a> <a href="#ref_7" epub:type="noteref" class="ru">очень</a> <a href="#ref_8" epub:type="noteref" class="ru">нормальными</a>, thank you very much. <a href="#ref_9" epub:type="noteref" class="ru">Они</a> <a href="#ref_10" epub:type="noteref" class="ru">были</a> the last <a href="#ref_11" epub:type="noteref" class="ru">люди</a> you’d expect to <a href="#ref_12" epub:type="noteref" class="ru">быть</a> involved <a href="#ref_13" epub:type="noteref" class="ru">в</a> anything strange or mysterious, because <a href="#ref_14" epub:type="noteref" class="ru">они</a> just <a href="#ref_15" epub:type="noteref" class="ru">не</a> hold with such nonsense.<p><p>Mr Dursley <a href="#ref_16" epub:type="noteref" class="ru">был</a> the director of a firm called Grunnings, which made drills. <a href="#ref_17" epub:type="noteref" class="ru">Он</a> <a href="#ref_18" epub:type="noteref" class="ru">был</a> a big, beefy <a href="#ref_19" epub:type="noteref" class="ru">человек</a> with hardly any neck, although <a href="#ref_20" epub:type="noteref" class="ru">он</a> did have a <a href="#ref_21" epub:type="noteref" class="ru">очень</a> large moustache. Mrs Dursley <a href="#ref_22" epub:type="noteref" class="ru">была</a> thin and blonde and had nearly twice the usual amount of neck, which came <a href="#ref_23" epub:type="noteref" class="ru">в</a> <a href="#ref_24" epub:type="noteref" class="ru">очень</a> useful as <a href="#ref_25" epub:type="noteref" class="ru">она</a> spent so much of <a href="#ref_26" epub:type="noteref" class="ru">своего</a> time craning over garden fences, spying on the neighbours. The Dursleys had a <a href="#ref_27" epub:type="noteref" class="ru">маленького</a> son called Dudley and <a href="#ref_28" epub:type="noteref" class="ru">в</a> <a href="#ref_29" epub:type="noteref" class="ru">их</a> opinion there was no finer boy anywhere.<p><p>The Dursleys had everything they wanted, <a href="#ref_30" epub:type="noteref" class="ru">но</a> <a href="#ref_31" epub:type="noteref" class="ru">они</a> also had a secret, and <a href="#ref_32" epub:type="noteref" class="ru">их</a> greatest fear <a href="#ref_33" epub:type="noteref" class="ru">был</a> that somebody would discover <a href="#ref_34" epub:type="noteref" class="ru">это</a>. <a href="#ref_35" epub:type="noteref" class="ru">Они</a> <a href="#ref_36" epub:type="noteref" class="ru">не</a> think <a href="#ref_37" epub:type="noteref" class="ru">они</a> could bear <a href="#ref_38" epub:type="noteref" class="ru">это</a> if anyone found out about the Potters. Mrs Potter <a href="#ref_39" epub:type="noteref" class="ru">была</a> Mrs Dursley’s sister, <a href="#ref_40" epub:type="noteref" class="ru">но</a> <a href="#ref_41" epub:type="noteref" class="ru">они</a> <a href="#ref_42" epub:type="noteref" class="ru">не</a> had met <a href="#ref_43" epub:type="noteref" class="ru">для</a> several years; in fact, Mrs Dursley pretended <a href="#ref_44" epub:type="noteref" class="ru">она</a> <a href="#ref_45" epub:type="noteref" class="ru">не</a> had a sister, because her sister and her good-for-nothing husband were as unDursleyish as <a href="#ref_46" epub:type="noteref" class="ru">это</a> <a href="#ref_47" epub:type="noteref" class="ru">было</a> possible to <a href="#ref_48" epub:type="noteref" class="ru">быть</a>. The Dursleys shuddered to think <a href="#ref_49" epub:type="noteref" class="ru">что</a> the neighbours would <a href="#ref_50" epub:type="noteref" class="ru">сказать</a> if the Potters arrived in the street. The Dursleys knew <a href="#ref_51" epub:type="noteref" class="ru">что</a> the Potters had a <a href="#ref_52" epub:type="noteref" class="ru">маленького</a> son, too, <a href="#ref_53" epub:type="noteref" class="ru">но</a> <a href="#ref_54" epub:type="noteref" class="ru">они</a> <a href="#ref_55" epub:type="noteref" class="ru">не</a> had never even seen him. <a href="#ref_56" epub:type="noteref" class="ru">Этот</a> boy <a href="#ref_57" epub:type="noteref" class="ru">был</a> another good reason <a href="#ref_58" epub:type="noteref" class="ru">для</a> keeping the Potters away; <a href="#ref_59" epub:type="noteref" class="ru">они</a> <a href="#ref_60" epub:type="noteref" class="ru">не</a> want Dudley mixing with a child like <a href="#ref_61" epub:type="noteref" class="ru">что</a>.<p>
+    
+    <section class="footnotes">
+        
+        <aside id="ref_1" epub:type="footnote">
+            <p><strong>number</strong></p>
+            <p><em>Base: номер</em></p>
+        </aside>
+        
+
+        <aside id="ref_2" epub:type="footnote">
+            <p><strong>were</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_3" epub:type="footnote">
+            <p><strong>to say</strong></p>
+            <p><em>Base: сказать</em></p>
+        </aside>
+        
+
+        <aside id="ref_4" epub:type="footnote">
+            <p><strong>that</strong></p>
+            <p><em>Base: что</em></p>
+        </aside>
+        
+
+        <aside id="ref_5" epub:type="footnote">
+            <p><strong>they</strong></p>
+            <p><em>Base: они</em></p>
+        </aside>
+        
+
+        <aside id="ref_6" epub:type="footnote">
+            <p><strong>were</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_7" epub:type="footnote">
+            <p><strong>very</strong></p>
+            <p><em>Base: очень</em></p>
+        </aside>
+        
+
+        <aside id="ref_8" epub:type="footnote">
+            <p><strong>normal</strong></p>
+            <p><em>Base: нормальный</em></p>
+        </aside>
+        
+
+        <aside id="ref_9" epub:type="footnote">
+            <p><strong>They</strong></p>
+            <p><em>Base: они</em></p>
+        </aside>
+        
+
+        <aside id="ref_10" epub:type="footnote">
+            <p><strong>were</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_11" epub:type="footnote">
+            <p><strong>people</strong></p>
+            <p><em>Base: человек</em></p>
+        </aside>
+        
+
+        <aside id="ref_12" epub:type="footnote">
+            <p><strong>to be</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_13" epub:type="footnote">
+            <p><strong>in</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_14" epub:type="footnote">
+            <p><strong>they</strong></p>
+            <p><em>Base: они</em></p>
+        </aside>
+        
+
+        <aside id="ref_15" epub:type="footnote">
+            <p><strong>not</strong></p>
+            <p><em>Base: не</em></p>
+        </aside>
+        
+
+        <aside id="ref_16" epub:type="footnote">
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_17" epub:type="footnote">
+            <p><strong>He</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_18" epub:type="footnote">
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_19" epub:type="footnote">
+            <p><strong>man</strong></p>
+            <p><em>Base: человек</em></p>
+        </aside>
+        
+
+        <aside id="ref_20" epub:type="footnote">
+            <p><strong>he</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_21" epub:type="footnote">
+            <p><strong>very</strong></p>
+            <p><em>Base: очень</em></p>
+        </aside>
+        
+
+        <aside id="ref_22" epub:type="footnote">
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_23" epub:type="footnote">
+            <p><strong>in</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_24" epub:type="footnote">
+            <p><strong>very</strong></p>
+            <p><em>Base: очень</em></p>
+        </aside>
+        
+
+        <aside id="ref_25" epub:type="footnote">
+            <p><strong>she</strong></p>
+            <p><em>Base: она</em></p>
+        </aside>
+        
+
+        <aside id="ref_26" epub:type="footnote">
+            <p><strong>her/own</strong></p>
+            <p><em>Base: свой</em></p>
+        </aside>
+        
+
+        <aside id="ref_27" epub:type="footnote">
+            <p><strong>small</strong></p>
+            <p><em>Base: маленький</em></p>
+        </aside>
+        
+
+        <aside id="ref_28" epub:type="footnote">
+            <p><strong>in</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_29" epub:type="footnote">
+            <p><strong>their</strong></p>
+            <p><em>Base: их</em></p>
+        </aside>
+        
+
+        <aside id="ref_30" epub:type="footnote">
+            <p><strong>but</strong></p>
+            <p><em>Base: но</em></p>
+        </aside>
+        
+
+        <aside id="ref_31" epub:type="footnote">
+            <p><strong>they</strong></p>
+            <p><em>Base: они</em></p>
+        </aside>
+        
+
+        <aside id="ref_32" epub:type="footnote">
+            <p><strong>their</strong></p>
+            <p><em>Base: их</em></p>
+        </aside>
+        
+
+        <aside id="ref_33" epub:type="footnote">
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_34" epub:type="footnote">
+            <p><strong>it</strong></p>
+            <p><em>Base: это</em></p>
+        </aside>
+        
+
+        <aside id="ref_35" epub:type="footnote">
+            <p><strong>They</strong></p>
+            <p><em>Base: они</em></p>
+        </aside>
+        
+
+        <aside id="ref_36" epub:type="footnote">
+            <p><strong>not</strong></p>
+            <p><em>Base: не</em></p>
+        </aside>
+        
+
+        <aside id="ref_37" epub:type="footnote">
+            <p><strong>they</strong></p>
+            <p><em>Base: они</em></p>
+        </aside>
+        
+
+        <aside id="ref_38" epub:type="footnote">
+            <p><strong>it</strong></p>
+            <p><em>Base: это</em></p>
+        </aside>
+        
+
+        <aside id="ref_39" epub:type="footnote">
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_40" epub:type="footnote">
+            <p><strong>but</strong></p>
+            <p><em>Base: но</em></p>
+        </aside>
+        
+
+        <aside id="ref_41" epub:type="footnote">
+            <p><strong>they</strong></p>
+            <p><em>Base: они</em></p>
+        </aside>
+        
+
+        <aside id="ref_42" epub:type="footnote">
+            <p><strong>not</strong></p>
+            <p><em>Base: не</em></p>
+        </aside>
+        
+
+        <aside id="ref_43" epub:type="footnote">
+            <p><strong>for</strong></p>
+            <p><em>Base: для</em></p>
+        </aside>
+        
+
+        <aside id="ref_44" epub:type="footnote">
+            <p><strong>she</strong></p>
+            <p><em>Base: она</em></p>
+        </aside>
+        
+
+        <aside id="ref_45" epub:type="footnote">
+            <p><strong>not</strong></p>
+            <p><em>Base: не</em></p>
+        </aside>
+        
+
+        <aside id="ref_46" epub:type="footnote">
+            <p><strong>it</strong></p>
+            <p><em>Base: это</em></p>
+        </aside>
+        
+
+        <aside id="ref_47" epub:type="footnote">
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_48" epub:type="footnote">
+            <p><strong>to be</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_49" epub:type="footnote">
+            <p><strong>what</strong></p>
+            <p><em>Base: что</em></p>
+        </aside>
+        
+
+        <aside id="ref_50" epub:type="footnote">
+            <p><strong>to say</strong></p>
+            <p><em>Base: сказать</em></p>
+        </aside>
+        
+
+        <aside id="ref_51" epub:type="footnote">
+            <p><strong>that</strong></p>
+            <p><em>Base: что</em></p>
+        </aside>
+        
+
+        <aside id="ref_52" epub:type="footnote">
+            <p><strong>small</strong></p>
+            <p><em>Base: маленький</em></p>
+        </aside>
+        
+
+        <aside id="ref_53" epub:type="footnote">
+            <p><strong>but</strong></p>
+            <p><em>Base: но</em></p>
+        </aside>
+        
+
+        <aside id="ref_54" epub:type="footnote">
+            <p><strong>they</strong></p>
+            <p><em>Base: они</em></p>
+        </aside>
+        
+
+        <aside id="ref_55" epub:type="footnote">
+            <p><strong>not</strong></p>
+            <p><em>Base: не</em></p>
+        </aside>
+        
+
+        <aside id="ref_56" epub:type="footnote">
+            <p><strong>This</strong></p>
+            <p><em>Base: это</em></p>
+        </aside>
+        
+
+        <aside id="ref_57" epub:type="footnote">
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_58" epub:type="footnote">
+            <p><strong>for</strong></p>
+            <p><em>Base: для</em></p>
+        </aside>
+        
+
+        <aside id="ref_59" epub:type="footnote">
+            <p><strong>they</strong></p>
+            <p><em>Base: они</em></p>
+        </aside>
+        
+
+        <aside id="ref_60" epub:type="footnote">
+            <p><strong>not</strong></p>
+            <p><em>Base: не</em></p>
+        </aside>
+        
+
+        <aside id="ref_61" epub:type="footnote">
+            <p><strong>that</strong></p>
+            <p><em>Base: что</em></p>
+        </aside>
+        
+    </section>
+
+    <div id="test-popup">
+        <div id="popup-content"></div>
+        <button onclick="document.getElementById('test-popup').style.display='none'" style="margin-top:10px;">Close</button>
+    </div>
+
+    <script>
+        // Find all Russian links
+        const links = document.querySelectorAll('a.ru');
+        const popup = document.getElementById('test-popup');
+        const popupContent = document.getElementById('popup-content');
+
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Stop the page from jumping
+                
+                // 1. Get the ID (e.g., "#ref_1" -> "ref_1")
+                const targetId = this.getAttribute('href').substring(1);
+                
+                // 2. Find the hidden footnote with that ID
+                const footnote = document.getElementById(targetId);
+                
+                if (footnote) {
+                    // 3. Copy text to our fake popup
+                    popupContent.innerHTML = footnote.innerHTML;
+                    popup.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
