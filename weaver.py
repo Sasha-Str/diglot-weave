@@ -31,26 +31,27 @@ def load_json(filename):
     if path.exists():
         with open(path,"r") as f:
             try:
-                existing_words = json.load(f)
+                contents = json.load(f)
             
             #In case of an error, option to create new empty list. Otherwise exit the program
             except json.JSONDecodeError:
                 y_n = input(f"Error reading the file {filename}, overwrite? (Y/N)\n")
                 if y_n in ["y","Y"]:
-                    existing_words = ["он"]
+                    contents = ["он"]
                 else:
                     print("Please specify a valid file")
                     sys.exit()
     
     else:
-        existing_words = ["он"]
-    return existing_words
+        contents = ["он"]
+    return contents
 
 
 
 
 #Pull the list of models, not part of the program
 def get_model_list():
+    client = genai.Client()
     print("List of models that support text generation: \n")
     for m in client.models.list():
         for action in m.supported_actions:
@@ -119,8 +120,6 @@ def call_ai(ai_client, prompt, text, words):
         }
     )
     response = response_raw.parsed
-    #TEMP***************
-    print(response.flat_list)
     return [response.modified_text, response.new_words, response.flat_list]
     
 
@@ -159,7 +158,7 @@ def weave():
     known_words_filename = "known_words.json"
     eng_text = ""
     known_words = []
-    en_ru_prompt = "User wants to learn Russian from English by learning words in context (similar to Prismatext). An English text has been provided. Also a list of known Russian words (lemmas) has been provided. The goal is to translate parts of the English text into Russian, generally by replacing English words (or groups of words) with their Russian translation. A literal translation can be awkward, so you may alter the sentence somewhat to make it grammatically correct (or as close as possible) in both languages. If a word/lemma is known, it should appear in all appropriate instances (replacing the English word(s)), with correct inflection and conjugation (remember all 3 genders). Gradually (perhaps once every 100 words) introduce new Russian words (EASIER, EVERYDAY WORDS COME FIRST). Ensure that grammar, punctuation and capitalisation are correct. Return 3 objects. 1. The new text (which will be a hybrid of English and Russian), and include a double newline in between paragraphs (but no additional formatting, no emphasising the Russian words with asterisks or all caps), 2. Return the list of newly added Russian lemmas. 3. Return the list of all Russian words used (in order, repetitions allowed), with their Russian lemma and English translation (in context)."
+    en_ru_prompt = "The aim is to create a diglot weave based on a list of known words, then to slowly introduce new words (similar to Prismatext). An English text has been provided. Also a list of known Russian words (as lemmas) has been provided. A literal or word-for word translation is unlikely to work, so you may alter the sentence somewhat to make it grammatically correct (or as close as possible) in both languages. For example, multiple words may be replaced by a single word in the target language or vice versa. If a word/lemma is known, it should appear in all appropriate instances (replacing the English word(s)), with correct inflection and conjugation (remember all 3 genders). Gradually (less than 1% of words) introduce new Russian words (EASIER, EVERYDAY WORDS COME FIRST). Ensure that grammar, punctuation and capitalisation are consistent with rules in both English and Russian. If/when a clause contains mostly words that are known, it should be structured like a Russian sentence (in terms of grammar, word order etc.) rather than retaining the original English structure. Return 3 objects. 1. The new text (which will be a hybrid of English and Russian), and include a double newline in between paragraphs (but no additional formatting, no emphasising the Russian words with asterisks or all caps), 2. Return the list of newly added Russian lemmas. 3. Return the list of all Russian words used (in order, repetitions allowed), with their Russian lemma and original English word(s)."
     output_text = ""
     output_words = []
     new_text_filename = "interwoven_text.txt"
@@ -180,6 +179,7 @@ def weave():
 def main():
     
     weave()
+    # get_model_list()
     
     return
 
