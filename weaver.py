@@ -6,20 +6,9 @@ import json
 import sys
 
 
-#Define the format of the output from Gemini
-class word_key(BaseModel):
-    word: str       # translated word
-    lemma: str      # lemma of translated word
-    definition: str # in-context definition of the translated word
-    
-    
 class Output(BaseModel):
     modified_text: str
     new_words: list[str]
-    flat_list: list[word_key]
-
-
-
 
 
 
@@ -108,11 +97,16 @@ def pull_data(text_filename,words_filename):
 
 # It is configured to output a json with two parts - the modified text and the new words
 
-def call_ai(ai_client, prompt, text, words):
+def call_ai(prompt, text, words):
     
     print("Generating new text...\n") 
-    response_raw = ai_client.models.generate_content(
-        model="gemini-flash-latest", 
+    
+    #Initialise the client
+    client = genai.Client()
+    
+    
+    response_raw = client.models.generate_content(
+        model="gemini-flash-latest",                  # "gemini-flash-latest", "gemini-3-flash-preview"
         contents=[prompt, text, words],
         config = {
             "response_mime_type": "application/json",
@@ -120,20 +114,15 @@ def call_ai(ai_client, prompt, text, words):
         }
     )
     response = response_raw.parsed
-    return [response.modified_text, response.new_words, response.flat_list]
+    return [response.modified_text, response.new_words]
     
 
-def save_data(text_filename, words_filename, words, response_text, response_words, response_footnote, ftn_filename):
-    
-    # TEMP - VIEW OUTPUT IMMEDIATELY
-    # print(f"New text: {response.modified_text} \n")
-    print(f"New words: {response_words}")
+def save_data(text_filename, words_filename, words, response_text, response_words):
 
     #SAVING OUTPUT
     print("saving output...\n")
     save_new_text(text_filename,response_text)
     update_known_words(words_filename, words, response_words)
-    save_footnote(ftn_filename, response_footnote)
 
     print("saving complete")
 
@@ -147,10 +136,6 @@ def save_data(text_filename, words_filename, words, response_text, response_word
 
 def weave():
     
-    #Initialise the client
-    client = genai.Client()
-
-
 
     #Initialise variables 
     eng_text_filename = "eng_text.txt"
@@ -158,7 +143,7 @@ def weave():
     known_words_filename = "known_words.json"
     eng_text = ""
     known_words = []
-    en_ru_prompt = "The aim is to create a diglot weave based on a list of known words, then to slowly introduce new words (similar to Prismatext). An English text has been provided. Also a list of known Russian words (as lemmas) has been provided. A literal or word-for word translation is unlikely to work, so you may alter the sentence somewhat to make it grammatically correct (or as close as possible) in both languages. For example, multiple words may be replaced by a single word in the target language or vice versa. If a word/lemma is known, it should appear in all appropriate instances (replacing the English word(s)), with correct inflection and conjugation (remember all 3 genders). Gradually (less than 1% of words) introduce new Russian words (EASIER, EVERYDAY WORDS COME FIRST). Ensure that grammar, punctuation and capitalisation are consistent with rules in both English and Russian. If/when a clause contains mostly words that are known, it should be structured like a Russian sentence (in terms of grammar, word order etc.) rather than retaining the original English structure. Return 3 objects. 1. The new text (which will be a hybrid of English and Russian), and include a double newline in between paragraphs (but no additional formatting, no emphasising the Russian words with asterisks or all caps), 2. Return the list of newly added Russian lemmas. 3. Return the list of all Russian words used (in order, repetitions allowed), with their Russian lemma and original English word(s)."
+    en_ru_prompt = "The aim is to create a diglot weave based on a list of known words, then to slowly introduce new words (similar to Prismatext). An English text has been provided. Also a list of known Russian words (as lemmas) has been provided. Replace words or phrases from the text with their Russian equivalents. A literal or word-for word translation will not succeed, so when you notice that it is appropriate to add a Russian word, ALTER THE SENTENCE AS NEEDED to make it grammatically correct (or as close as possible) in both languages. FOR EXAMPLE, multiple words may be replaced by a single word in the target language or vice versa (e.g. 'a car' becomes 'машина', not 'a машина', 'have been' becomes 'были', 'to go' becomes 'идти', etc. All of these little grammatical rules that don't translate literally between the languages). If a word/lemma is known, it should appear in all appropriate instances, with correct inflection and conjugation (remember all 3 genders). Gradually (less than 1% of words) introduce new Russian words (EASIER, EVERYDAY WORDS COME FIRST). Ensure that grammar, punctuation and capitalisation are consistent with rules in both English and Russian. If/when a clause contains mostly words that are known, it should be structured like a Russian sentence (in terms of grammar, word order etc.) rather than retaining any of the original English structure. Return 2 objects. 1. The new text (which will be a hybrid of English and Russian), and include a double newline in between paragraphs. When introducing a Russian word, it MUST be in the format {{RussianWord|Lemma|Original Word(s)}} with no additional emphasis or all-caps for the Russian word and the lemma in lower-case. Beyond this, no additional formatting. No emphasising the Russian words with asterisks or all caps. And 2. Return the list of newly added Russian lemmas."
     output_text = ""
     output_words = []
     new_text_filename = "interwoven_text.txt"
@@ -169,9 +154,9 @@ def weave():
     # Pull the data from file
     [eng_text,known_words] = pull_data(eng_text_filename,known_words_filename)
     # LLM does its thing
-    [output_text,output_words, output_footnote] = call_ai(client,en_ru_prompt,eng_text,known_words)
+    [output_text,output_words] = call_ai(en_ru_prompt,eng_text,known_words)
     # Save the data to file 
-    save_data(new_text_filename, known_words_filename, known_words, output_text, output_words, output_footnote, footnote_filename)
+    save_data(new_text_filename, known_words_filename, known_words, output_text, output_words)
 
 
 
