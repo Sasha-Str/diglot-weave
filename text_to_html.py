@@ -4,9 +4,8 @@ import html
 import json
 
 
-class FootnoteReplacer:
-    def __init__(self, dictionary):
-        self.dictionary = dictionary
+class TagReplacer:
+    def __init__(self):
         self.counter = 0
         self.footnotes = []  # Stores the definitions
 
@@ -15,21 +14,24 @@ class FootnoteReplacer:
         self.counter += 1
         ref_id = f"ref_{self.counter}"
         
-        word = match.group(0)
-        definition = self.dictionary.pop(0) 
+        # Split the braces to extract word, lemma and definition
+        content = match.group(1)
+        try:
+            word, lemma, definition = content.split('|')
+        except ValueError:
+            return content
         
-        # Save the footnote internally
-        note_html = note_html = f"""
+        # Create the footnote 
+        note_html = f"""
         <aside id="{ref_id}" epub:type="footnote">
-            <p><strong>{definition['definition']}</strong></p>
-            <p><em>Base: {definition['lemma']}</em></p>
+            <p><strong>{definition.strip()}</strong></p>
+            <p><em>Base: {lemma.strip()}</em></p>
         </aside>
         """
         self.footnotes.append(note_html)
         
         # Return the link
-        return f'<a href="#{ref_id}" epub:type="noteref" class="ru">{match.group(0)}</a>'
-
+        return f'<a href="#{ref_id}" epub:type="noteref" class="ru">{word.strip()}</a>'
 
 
 def load_json(filename):
@@ -86,8 +88,7 @@ footnotes_filename = "footnote.json"
 # Ensure encoding is utf-8 to handle the Russian correctly
 text = Path("interwoven_text.txt").read_text(encoding="utf-8")
 
-footnote_dictionary = load_json(footnotes_filename)
-replacer = FootnoteReplacer(dictionary = footnote_dictionary)
+replacer = TagReplacer()
 
 # 2. Escape HTML special characters
 # This ensures symbols like "&" don't break the ebook reader
@@ -107,7 +108,11 @@ for p in paragraphs:
 
 # 4. Find any Cyrillic character range (a Russian word) and wraps it in a <span class="ru">...</span>
 # THIS WILL NEED TO BE MODIFIED FOR OTHER LANGUAGES
-html_body = re.sub(r'([\u0400-\u04FF]+)', replacer, html_body)
+html_body = re.sub(
+    r'\{\{(.*?)\}\}', 
+    replacer, 
+    html_body
+)
 
 
 # Combine footnotes into one block
