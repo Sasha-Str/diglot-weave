@@ -51,6 +51,7 @@ def load_json(filename):
 
 #Pull the list of models, not part of the program
 def get_model_list():
+    client = genai.Client()
     print("List of models that support text generation: \n")
     for m in client.models.list():
         for action in m.supported_actions:
@@ -178,6 +179,7 @@ def weave():
 def main():
     
     weave()
+    # get_model_list()
     
     return
 
