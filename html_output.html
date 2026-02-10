@@ -1,368 +1,368 @@
 
-<?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
-<head>
-  <title>Test Mode</title>
-  <style>
-    body { 
-        font-family: serif; 
-        line-height: 1.6; 
-        max-width: 800px; 
-        margin: 0 auto; 
-        padding: 20px; 
-        padding-bottom: 200px; /* Space for the popup */
-    }
-    p { text-indent: 1.5em; margin: 0; }
-    
-    /* LINK STYLING */
-    a.ru {
-        color: #3b5998;
-        font-weight: bold;
-        text-decoration: none;
-        cursor: pointer;
-        border-bottom: 1px dotted #3b5998; /* Visual hint it's clickable */
-    }
-    a.ru:hover { background-color: #eaf2ff; }
-
-    /* HIDE FOOTNOTES (The data source) */
-    aside { display: none; }
-
-    /* THE FAKE POPUP BOX (For testing only) */
-    #test-popup {
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        max-width: 400px;
-        background: white;
-        border: 2px solid #3b5998;
-        border-radius: 8px;
-        padding: 15px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        display: none; /* Hidden by default */
-        z-index: 1000;
-        font-family: sans-serif;
-    }
-    #test-popup h3 { margin-top: 0; color: #3b5998; }
-  </style>
-</head>
-<body>
-
-    <p>Mr <a href="#ref_1" epub:type="noteref" class="ru">и</a> Mrs Dursley, of <a href="#ref_2" epub:type="noteref" class="ru">номер</a> four, Privet Drive, <a href="#ref_3" epub:type="noteref" class="ru">были</a> proud to say <a href="#ref_4" epub:type="noteref" class="ru">что</a> they <a href="#ref_5" epub:type="noteref" class="ru">были</a> perfectly normal, thank <a href="#ref_6" epub:type="noteref" class="ru">вы</a> <a href="#ref_7" epub:type="noteref" class="ru">очень</a> much. They <a href="#ref_8" epub:type="noteref" class="ru">были</a> the last people <a href="#ref_9" epub:type="noteref" class="ru">вы</a>’d expect to <a href="#ref_10" epub:type="noteref" class="ru">быть</a> involved in anything strange <a href="#ref_11" epub:type="noteref" class="ru">или</a> mysterious, because they just didn’t hold with such nonsense.<p><p>Mr Dursley <a href="#ref_12" epub:type="noteref" class="ru">был</a> the director of a firm called Grunnings, which made drills. <a href="#ref_13" epub:type="noteref" class="ru">Он</a> <a href="#ref_14" epub:type="noteref" class="ru">был</a> a big, beefy <a href="#ref_15" epub:type="noteref" class="ru">мужчина</a> with hardly any neck, although <a href="#ref_16" epub:type="noteref" class="ru">он</a> did have a <a href="#ref_17" epub:type="noteref" class="ru">очень</a> large moustache. Mrs Dursley <a href="#ref_18" epub:type="noteref" class="ru">была</a> thin <a href="#ref_19" epub:type="noteref" class="ru">и</a> blonde <a href="#ref_20" epub:type="noteref" class="ru">и</a> had nearly twice the usual amount of neck, which came in <a href="#ref_21" epub:type="noteref" class="ru">очень</a> useful as she spent so much of her time craning over garden fences, spying on the neighbours. The Dursleys had a small <a href="#ref_22" epub:type="noteref" class="ru">сын</a> called Dudley <a href="#ref_23" epub:type="noteref" class="ru">и</a> in their opinion there <a href="#ref_24" epub:type="noteref" class="ru">был</a> <a href="#ref_25" epub:type="noteref" class="ru">не</a> finer boy anywhere.<p><p>The Dursleys had everything <a href="#ref_26" epub:type="noteref" class="ru">что</a> they wanted, but they also had a secret, <a href="#ref_27" epub:type="noteref" class="ru">и</a> their greatest fear <a href="#ref_28" epub:type="noteref" class="ru">был</a> <a href="#ref_29" epub:type="noteref" class="ru">что</a> somebody would discover <a href="#ref_30" epub:type="noteref" class="ru">это</a>. They didn’t think they could bear <a href="#ref_31" epub:type="noteref" class="ru">это</a> if anyone found out about the Potters. Mrs Potter <a href="#ref_32" epub:type="noteref" class="ru">была</a> Mrs Dursley’s sister, but they hadn’t met for several years; in fact, Mrs Dursley pretended she didn’t have a sister, because her sister <a href="#ref_33" epub:type="noteref" class="ru">и</a> her good-for-nothing husband <a href="#ref_34" epub:type="noteref" class="ru">были</a> as unDursleyish as <a href="#ref_35" epub:type="noteref" class="ru">это</a> <a href="#ref_36" epub:type="noteref" class="ru">было</a> possible to <a href="#ref_37" epub:type="noteref" class="ru">быть</a>. The Dursleys shuddered to think <a href="#ref_38" epub:type="noteref" class="ru">что</a> the neighbours would say if the Potters arrived in the street. The Dursleys knew <a href="#ref_39" epub:type="noteref" class="ru">что</a> the Potters had a small <a href="#ref_40" epub:type="noteref" class="ru">сын</a>, too, but they had <a href="#ref_41" epub:type="noteref" class="ru">никогда</a> even <a href="#ref_42" epub:type="noteref" class="ru">видели</a> him. <a href="#ref_43" epub:type="noteref" class="ru">Этот</a> boy <a href="#ref_44" epub:type="noteref" class="ru">был</a> another good reason for keeping the Potters away; they didn’t want Dudley mixing with a child like <a href="#ref_45" epub:type="noteref" class="ru">это</a>.<p><p>When Mr <a href="#ref_46" epub:type="noteref" class="ru">и</a> Mrs Dursley woke up on the dull, grey Tuesday our story starts, there <a href="#ref_47" epub:type="noteref" class="ru">было</a> <a href="#ref_48" epub:type="noteref" class="ru">ничего</a> about the cloudy sky outside to suggest <a href="#ref_49" epub:type="noteref" class="ru">что</a> strange <a href="#ref_50" epub:type="noteref" class="ru">и</a> mysterious things would soon <a href="#ref_51" epub:type="noteref" class="ru">быть</a> happening all over the country. Mr Dursley hummed as <a href="#ref_52" epub:type="noteref" class="ru">он</a> picked out his most boring tie for work <a href="#ref_53" epub:type="noteref" class="ru">и</a> Mrs Dursley gossiped away happily as she wrestled a screaming Dudley into his high chair.<p><p><a href="#ref_54" epub:type="noteref" class="ru">Никто</a> of them noticed a large tawny owl flutter past the window.<p><p>At half past eight, Mr Dursley picked up his briefcase, pecked Mrs Dursley on the cheek <a href="#ref_55" epub:type="noteref" class="ru">и</a> tried to kiss Dudley goodbye but missed, because Dudley <a href="#ref_56" epub:type="noteref" class="ru">был</a> now having a tantrum <a href="#ref_57" epub:type="noteref" class="ru">и</a> throwing his cereal at the walls. ‘Little tyke,’ chortled Mr Dursley as <a href="#ref_58" epub:type="noteref" class="ru">он</a> left the <a href="#ref_59" epub:type="noteref" class="ru">дом</a>. <a href="#ref_60" epub:type="noteref" class="ru">Он</a> got into his <a href="#ref_61" epub:type="noteref" class="ru">машина</a> <a href="#ref_62" epub:type="noteref" class="ru">и</a> backed out of <a href="#ref_63" epub:type="noteref" class="ru">номер</a> four’s drive.<p><p><a href="#ref_64" epub:type="noteref" class="ru">Это</a> <a href="#ref_65" epub:type="noteref" class="ru">было</a> on the corner of the street <a href="#ref_66" epub:type="noteref" class="ru">что</a> <a href="#ref_67" epub:type="noteref" class="ru">он</a> noticed the first sign of something peculiar – a cat reading a map. For a second, Mr Dursley <a href="#ref_68" epub:type="noteref" class="ru">не</a> realise <a href="#ref_69" epub:type="noteref" class="ru">что</a> <a href="#ref_70" epub:type="noteref" class="ru">он</a> had <a href="#ref_71" epub:type="noteref" class="ru">видел</a> – then <a href="#ref_72" epub:type="noteref" class="ru">он</a> jerked his head around to look again. There <a href="#ref_73" epub:type="noteref" class="ru">была</a> a tabby cat standing on the corner of Privet Drive, but there <a href="#ref_74" epub:type="noteref" class="ru">не</a> a map in sight. <a href="#ref_75" epub:type="noteref" class="ru">Что</a> could <a href="#ref_76" epub:type="noteref" class="ru">он</a> have <a href="#ref_77" epub:type="noteref" class="ru">был</a> thinking of? <a href="#ref_78" epub:type="noteref" class="ru">Это</a> must have <a href="#ref_79" epub:type="noteref" class="ru">был</a> a trick of the light. Mr Dursley blinked <a href="#ref_80" epub:type="noteref" class="ru">и</a> stared at the cat. <a href="#ref_81" epub:type="noteref" class="ru">Он</a> stared back. As Mr Dursley drove around the corner <a href="#ref_82" epub:type="noteref" class="ru">и</a> up the road, <a href="#ref_83" epub:type="noteref" class="ru">он</a> watched the cat in his mirror. <a href="#ref_84" epub:type="noteref" class="ru">Он</a> <a href="#ref_85" epub:type="noteref" class="ru">была</a> now reading the sign <a href="#ref_86" epub:type="noteref" class="ru">что</a> said Privet Drive – <a href="#ref_87" epub:type="noteref" class="ru">нет</a>, looking at the sign; cats couldn’t read maps <a href="#ref_88" epub:type="noteref" class="ru">или</a> signs. Mr Dursley gave himself a little shake <a href="#ref_89" epub:type="noteref" class="ru">и</a> put the cat out of his mind. As <a href="#ref_90" epub:type="noteref" class="ru">он</a> drove towards town <a href="#ref_91" epub:type="noteref" class="ru">он</a> thought of <a href="#ref_92" epub:type="noteref" class="ru">ничего</a> except a large order of drills <a href="#ref_93" epub:type="noteref" class="ru">он</a> <a href="#ref_94" epub:type="noteref" class="ru">был</a> hoping to get that day.<p><p>But on the edge of town, drills <a href="#ref_95" epub:type="noteref" class="ru">были</a> driven out of his mind by something else. As <a href="#ref_96" epub:type="noteref" class="ru">он</a> sat in the usual morning traffic jam, <a href="#ref_97" epub:type="noteref" class="ru">он</a> couldn’t help noticing <a href="#ref_98" epub:type="noteref" class="ru">что</a> there seemed to <a href="#ref_99" epub:type="noteref" class="ru">быть</a> a lot of strangely dressed people about. People in cloaks. Mr Dursley couldn’t bear people who dressed in funny clothes – the get-ups <a href="#ref_100" epub:type="noteref" class="ru">вы</a> <a href="#ref_101" epub:type="noteref" class="ru">видели</a> on young people! <a href="#ref_102" epub:type="noteref" class="ru">Он</a> supposed <a href="#ref_103" epub:type="noteref" class="ru">это</a> <a href="#ref_104" epub:type="noteref" class="ru">был</a> some stupid new fashion. <a href="#ref_105" epub:type="noteref" class="ru">Он</a> drummed his fingers on the steering wheel <a href="#ref_106" epub:type="noteref" class="ru">и</a> his eyes fell on a huddle of these weirdos standing quite close by. They <a href="#ref_107" epub:type="noteref" class="ru">были</a> whispering excitedly together. Mr Dursley <a href="#ref_108" epub:type="noteref" class="ru">был</a> enraged to <a href="#ref_109" epub:type="noteref" class="ru">видеть</a> <a href="#ref_110" epub:type="noteref" class="ru">что</a> a couple of them <a href="#ref_111" epub:type="noteref" class="ru">не</a> young at all; why, that <a href="#ref_112" epub:type="noteref" class="ru">мужчина</a> had to <a href="#ref_113" epub:type="noteref" class="ru">быть</a> older than <a href="#ref_114" epub:type="noteref" class="ru">он</a> <a href="#ref_115" epub:type="noteref" class="ru">был</a>, <a href="#ref_116" epub:type="noteref" class="ru">и</a> wearing an emerald-green cloak! The nerve of him! But then <a href="#ref_117" epub:type="noteref" class="ru">это</a> struck Mr Dursley <a href="#ref_118" epub:type="noteref" class="ru">что</a> <a href="#ref_119" epub:type="noteref" class="ru">это</a> <a href="#ref_120" epub:type="noteref" class="ru">был</a> probably some silly stunt – these people <a href="#ref_121" epub:type="noteref" class="ru">были</a> obviously collecting for something … yes, <a href="#ref_122" epub:type="noteref" class="ru">это</a> would <a href="#ref_123" epub:type="noteref" class="ru">быть</a> <a href="#ref_124" epub:type="noteref" class="ru">это</a>. The traffic moved on, <a href="#ref_125" epub:type="noteref" class="ru">и</a> a few minutes later, Mr Dursley arrived in the Grunnings <a href="#ref_126" epub:type="noteref" class="ru">машина</a> park, his mind back on drills.<p><p>Mr Dursley always sat with his back to the window in his office on the ninth floor. If <a href="#ref_127" epub:type="noteref" class="ru">он</a> hadn’t, <a href="#ref_128" epub:type="noteref" class="ru">он</a> might have found <a href="#ref_129" epub:type="noteref" class="ru">это</a> harder to concentrate on drills that morning. <a href="#ref_130" epub:type="noteref" class="ru">Он</a> <a href="#ref_131" epub:type="noteref" class="ru">не</a> <a href="#ref_132" epub:type="noteref" class="ru">видел</a> the owls swooping past in broad daylight, though people down in the street did; they pointed <a href="#ref_133" epub:type="noteref" class="ru">и</a> gazed open-mouthed as owl after owl sped overhead. Most of them had <a href="#ref_134" epub:type="noteref" class="ru">никогда</a> <a href="#ref_135" epub:type="noteref" class="ru">видели</a> an owl even at nighttime. Mr Dursley, however, had a perfectly normal, owl-free morning. <a href="#ref_136" epub:type="noteref" class="ru">Он</a> yelled at five different people. <a href="#ref_137" epub:type="noteref" class="ru">Он</a> made several important telephone calls <a href="#ref_138" epub:type="noteref" class="ru">и</a> shouted a bit more. <a href="#ref_139" epub:type="noteref" class="ru">Он</a> <a href="#ref_140" epub:type="noteref" class="ru">был</a> in a <a href="#ref_141" epub:type="noteref" class="ru">очень</a> good mood until lunch-time, when <a href="#ref_142" epub:type="noteref" class="ru">он</a> thought <a href="#ref_143" epub:type="noteref" class="ru">он</a>’d stretch his legs <a href="#ref_144" epub:type="noteref" class="ru">и</a> walk across the road to buy himself a bun from the baker’s opposite.<p><p><a href="#ref_145" epub:type="noteref" class="ru">Он</a>’d forgotten all about the people in cloaks until <a href="#ref_146" epub:type="noteref" class="ru">он</a> passed a group of them next to the baker’s. <a href="#ref_147" epub:type="noteref" class="ru">Он</a> eyed them angrily as <a href="#ref_148" epub:type="noteref" class="ru">он</a> passed. <a href="#ref_149" epub:type="noteref" class="ru">Он</a> <a href="#ref_150" epub:type="noteref" class="ru">не</a> know why, but they made him uneasy. <a href="#ref_151" epub:type="noteref" class="ru">Эти</a> lot <a href="#ref_152" epub:type="noteref" class="ru">были</a> whispering excitedly, too, <a href="#ref_153" epub:type="noteref" class="ru">и</a> <a href="#ref_154" epub:type="noteref" class="ru">он</a> couldn’t <a href="#ref_155" epub:type="noteref" class="ru">видеть</a> a single collecting tin. <a href="#ref_156" epub:type="noteref" class="ru">Это</a> <a href="#ref_157" epub:type="noteref" class="ru">было</a> on his way back past them, clutching a large doughnut in a bag, <a href="#ref_158" epub:type="noteref" class="ru">что</a> <a href="#ref_159" epub:type="noteref" class="ru">он</a> caught a few words of <a href="#ref_160" epub:type="noteref" class="ru">что</a> they <a href="#ref_161" epub:type="noteref" class="ru">были</a> saying.<p><p>‘The Potters, <a href="#ref_162" epub:type="noteref" class="ru">это</a>’s right, <a href="#ref_163" epub:type="noteref" class="ru">это</a>’s <a href="#ref_164" epub:type="noteref" class="ru">что</a> <a href="#ref_165" epub:type="noteref" class="ru">я</a> heard –’<p><p>‘– yes, their <a href="#ref_166" epub:type="noteref" class="ru">сын</a>, Harry –’<p><p>Mr Dursley stopped dead. Fear flooded him. <a href="#ref_167" epub:type="noteref" class="ru">Он</a> looked back at the whisperers as if <a href="#ref_168" epub:type="noteref" class="ru">он</a> wanted to say something to them, but thought better of <a href="#ref_169" epub:type="noteref" class="ru">это</a>.<p><p><a href="#ref_170" epub:type="noteref" class="ru">Он</a> dashed back across the road, hurried up to his office, snapped at his secretary <a href="#ref_171" epub:type="noteref" class="ru">не</a> to disturb him, seized his telephone <a href="#ref_172" epub:type="noteref" class="ru">и</a> had almost finished dialling his <a href="#ref_173" epub:type="noteref" class="ru">дом</a> <a href="#ref_174" epub:type="noteref" class="ru">номер</a> when <a href="#ref_175" epub:type="noteref" class="ru">он</a> changed his mind. <a href="#ref_176" epub:type="noteref" class="ru">Он</a> put the receiver back down <a href="#ref_177" epub:type="noteref" class="ru">и</a> stroked his moustache, thinking … <a href="#ref_178" epub:type="noteref" class="ru">нет</a>, <a href="#ref_179" epub:type="noteref" class="ru">он</a> <a href="#ref_180" epub:type="noteref" class="ru">был</a> being stupid. Potter <a href="#ref_181" epub:type="noteref" class="ru">не</a> such an unusual name. <a href="#ref_182" epub:type="noteref" class="ru">Он</a> <a href="#ref_183" epub:type="noteref" class="ru">был</a> sure there <a href="#ref_184" epub:type="noteref" class="ru">были</a> lots of people called Potter who had a <a href="#ref_185" epub:type="noteref" class="ru">сын</a> called Harry. Come to think of <a href="#ref_186" epub:type="noteref" class="ru">это</a>, <a href="#ref_187" epub:type="noteref" class="ru">он</a> <a href="#ref_188" epub:type="noteref" class="ru">не</a> even sure his nephew <a href="#ref_189" epub:type="noteref" class="ru">был</a> called Harry. <a href="#ref_190" epub:type="noteref" class="ru">Он</a>’d <a href="#ref_191" epub:type="noteref" class="ru">никогда</a> even <a href="#ref_192" epub:type="noteref" class="ru">видел</a> the boy. <a href="#ref_193" epub:type="noteref" class="ru">Это</a> might have <a href="#ref_194" epub:type="noteref" class="ru">был</a> Harvey. <a href="#ref_195" epub:type="noteref" class="ru">Или</a> Harold. There <a href="#ref_196" epub:type="noteref" class="ru">было</a> <a href="#ref_197" epub:type="noteref" class="ru">не</a> point in worrying Mrs Dursley, she always got so upset at any mention of her sister. <a href="#ref_198" epub:type="noteref" class="ru">Он</a> didn’t blame her – if <a href="#ref_199" epub:type="noteref" class="ru">он</a>’d had a sister like <a href="#ref_200" epub:type="noteref" class="ru">это</a> … but all the same, those people in cloaks …<p><p><a href="#ref_201" epub:type="noteref" class="ru">Он</a> found <a href="#ref_202" epub:type="noteref" class="ru">это</a> a lot harder to concentrate on drills that afternoon, <a href="#ref_203" epub:type="noteref" class="ru">и</a> when <a href="#ref_204" epub:type="noteref" class="ru">он</a> left the building at five o’clock, <a href="#ref_205" epub:type="noteref" class="ru">он</a> <a href="#ref_206" epub:type="noteref" class="ru">был</a> still so worried <a href="#ref_207" epub:type="noteref" class="ru">что</a> <a href="#ref_208" epub:type="noteref" class="ru">он</a> walked straight into someone just outside the door.<p><p>‘Sorry,’ <a href="#ref_209" epub:type="noteref" class="ru">он</a> grunted, as the tiny old <a href="#ref_210" epub:type="noteref" class="ru">мужчина</a> stumbled <a href="#ref_211" epub:type="noteref" class="ru">и</a> almost fell. <a href="#ref_212" epub:type="noteref" class="ru">Это</a> <a href="#ref_213" epub:type="noteref" class="ru">было</a> a few seconds before Mr Dursley realised <a href="#ref_214" epub:type="noteref" class="ru">что</a> the <a href="#ref_215" epub:type="noteref" class="ru">мужчина</a> <a href="#ref_216" epub:type="noteref" class="ru">был</a> wearing a violet cloak. <a href="#ref_217" epub:type="noteref" class="ru">Он</a> <a href="#ref_218" epub:type="noteref" class="ru">не</a> seem at all upset at <a href="#ref_219" epub:type="noteref" class="ru">быть</a> almost knocked to the ground. On the contrary, his face split into a wide smile <a href="#ref_220" epub:type="noteref" class="ru">и</a> <a href="#ref_221" epub:type="noteref" class="ru">он</a> said in a squeaky voice <a href="#ref_222" epub:type="noteref" class="ru">что</a> made passers-by stare: ‘Don’t <a href="#ref_223" epub:type="noteref" class="ru">быть</a> sorry, my dear sir, for <a href="#ref_224" epub:type="noteref" class="ru">ничего</a> could upset <a href="#ref_225" epub:type="noteref" class="ru">меня</a> today! Rejoice, for You-Know-Who has gone at last! Even Muggles like yourself should <a href="#ref_226" epub:type="noteref" class="ru">быть</a> celebrating, <a href="#ref_227" epub:type="noteref" class="ru">этот</a> happy, happy day!’<p><p><a href="#ref_228" epub:type="noteref" class="ru">И</a> the old <a href="#ref_229" epub:type="noteref" class="ru">мужчина</a> hugged Mr Dursley around the middle <a href="#ref_230" epub:type="noteref" class="ru">и</a> walked off.<p><p>Mr Dursley stood rooted to the spot. <a href="#ref_231" epub:type="noteref" class="ru">Он</a> had <a href="#ref_232" epub:type="noteref" class="ru">был</a> hugged by a complete stranger. <a href="#ref_233" epub:type="noteref" class="ru">Он</a> also thought <a href="#ref_234" epub:type="noteref" class="ru">он</a> had <a href="#ref_235" epub:type="noteref" class="ru">был</a> called a Muggle, whatever <a href="#ref_236" epub:type="noteref" class="ru">это</a> <a href="#ref_237" epub:type="noteref" class="ru">был</a>. <a href="#ref_238" epub:type="noteref" class="ru">Он</a> <a href="#ref_239" epub:type="noteref" class="ru">был</a> rattled. <a href="#ref_240" epub:type="noteref" class="ru">Он</a> hurried to his <a href="#ref_241" epub:type="noteref" class="ru">машина</a> <a href="#ref_242" epub:type="noteref" class="ru">и</a> set off <a href="#ref_243" epub:type="noteref" class="ru">дом</a>, hoping <a href="#ref_244" epub:type="noteref" class="ru">он</a> <a href="#ref_245" epub:type="noteref" class="ru">был</a> imagining things, <a href="#ref_246" epub:type="noteref" class="ru">что</a> <a href="#ref_247" epub:type="noteref" class="ru">он</a> had <a href="#ref_248" epub:type="noteref" class="ru">никогда</a> hoped before, because <a href="#ref_249" epub:type="noteref" class="ru">он</a> didn’t approve of imagination.<p><p>As <a href="#ref_250" epub:type="noteref" class="ru">он</a> pulled into the driveway of <a href="#ref_251" epub:type="noteref" class="ru">номер</a> four, the first thing <a href="#ref_252" epub:type="noteref" class="ru">он</a> <a href="#ref_253" epub:type="noteref" class="ru">видел</a> – <a href="#ref_254" epub:type="noteref" class="ru">и</a> <a href="#ref_255" epub:type="noteref" class="ru">это</a> didn’t improve his mood – <a href="#ref_256" epub:type="noteref" class="ru">был</a> the tabby cat <a href="#ref_257" epub:type="noteref" class="ru">он</a>’d spotted that morning. <a href="#ref_258" epub:type="noteref" class="ru">Он</a> <a href="#ref_259" epub:type="noteref" class="ru">был</a> now sitting on his garden wall. <a href="#ref_260" epub:type="noteref" class="ru">Он</a> <a href="#ref_261" epub:type="noteref" class="ru">был</a> sure <a href="#ref_262" epub:type="noteref" class="ru">это</a> <a href="#ref_263" epub:type="noteref" class="ru">был</a> the same one; <a href="#ref_264" epub:type="noteref" class="ru">он</a> had the same markings around its eyes.<p><p>‘Shoo!’ said Mr Dursley loudly.<p><p>The cat <a href="#ref_265" epub:type="noteref" class="ru">не</a> move. <a href="#ref_266" epub:type="noteref" class="ru">Он</a> just gave him a stern look. <a href="#ref_267" epub:type="noteref" class="ru">Было</a> <a href="#ref_268" epub:type="noteref" class="ru">это</a> normal cat behaviour, Mr Dursley wondered. Trying to pull himself together, <a href="#ref_269" epub:type="noteref" class="ru">он</a> let himself into the <a href="#ref_270" epub:type="noteref" class="ru">дом</a>. <a href="#ref_271" epub:type="noteref" class="ru">Он</a> <a href="#ref_272" epub:type="noteref" class="ru">был</a> still determined <a href="#ref_273" epub:type="noteref" class="ru">не</a> to mention anything to his wife.<p><p>Mrs Dursley had had a nice, normal day. She told him over dinner all about Mrs Next Door’s problems with her daughter <a href="#ref_274" epub:type="noteref" class="ru">и</a> how Dudley had learnt a new word (‘Shan’t!’). Mr Dursley tried to act normally. When Dudley had <a href="#ref_275" epub:type="noteref" class="ru">был</a> put to bed, <a href="#ref_276" epub:type="noteref" class="ru">он</a> went into the living-room in time to catch the last report on the evening news:<p><p>‘<a href="#ref_277" epub:type="noteref" class="ru">И</a> finally, bird-watchers everywhere have reported <a href="#ref_278" epub:type="noteref" class="ru">что</a> the nation’s owls have <a href="#ref_279" epub:type="noteref" class="ru">были</a> behaving <a href="#ref_280" epub:type="noteref" class="ru">очень</a> unusually today. Although owls normally hunt at night <a href="#ref_281" epub:type="noteref" class="ru">и</a> are hardly ever <a href="#ref_282" epub:type="noteref" class="ru">видели</a> in daylight, there have <a href="#ref_283" epub:type="noteref" class="ru">были</a> hundreds of sightings of these birds flying in every direction since sunrise. Experts are unable to explain why the owls have suddenly changed their sleeping pattern.’ The news reader allowed himself a grin. ‘Most mysterious. <a href="#ref_284" epub:type="noteref" class="ru">И</a> now, over to Jim McGuffin with the weather. Going to <a href="#ref_285" epub:type="noteref" class="ru">быть</a> any more showers of owls tonight, Jim?’<p><p>‘Well, Ted,’ said the weatherman, ‘<a href="#ref_286" epub:type="noteref" class="ru">Я</a> <a href="#ref_287" epub:type="noteref" class="ru">не</a> know about <a href="#ref_288" epub:type="noteref" class="ru">это</a>, but <a href="#ref_289" epub:type="noteref" class="ru">это</a>’s <a href="#ref_290" epub:type="noteref" class="ru">не</a> only the owls <a href="#ref_291" epub:type="noteref" class="ru">что</a> have <a href="#ref_292" epub:type="noteref" class="ru">были</a> acting oddly today. Viewers as far apart as Kent, Yorkshire <a href="#ref_293" epub:type="noteref" class="ru">и</a> Dundee have <a href="#ref_294" epub:type="noteref" class="ru">были</a> phoning in to tell <a href="#ref_295" epub:type="noteref" class="ru">мне</a> <a href="#ref_296" epub:type="noteref" class="ru">что</a> instead of the rain <a href="#ref_297" epub:type="noteref" class="ru">Я</a> promised yesterday, they’ve had a downpour of shooting stars! Perhaps people have <a href="#ref_298" epub:type="noteref" class="ru">были</a><p>
-    
-    <section class="footnotes">
+    <?xml version='1.0' encoding='utf-8'?>
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+    <head>
+      <title>Test Mode</title>
+      <style>
+        body { 
+            font-family: serif; 
+            line-height: 1.6; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            padding-bottom: 200px; /* Space for the popup */
+        }
+        p { text-indent: 1.5em; margin: 0; }
         
+        /* LINK STYLING */
+        a.ru {
+            color: #3b5998;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            border-bottom: 1px dotted #3b5998; /* Visual hint it's clickable */
+        }
+        a.ru:hover { background-color: #eaf2ff; }
+
+        /* HIDE FOOTNOTES (The data source) */
+        aside { display: none; }
+
+        /* THE FAKE POPUP BOX (For testing only) */
+        #test-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 400px;
+            background: white;
+            border: 2px solid #3b5998;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: none; /* Hidden by default */
+            z-index: 1000;
+            font-family: sans-serif;
+        }
+        #test-popup h3 { margin-top: 0; color: #3b5998; }
+      </style>
+    </head>
+    <body>
+
+        <p><a href="#ref_1" epub:type="noteref" class="ru">Мистер</a> <a href="#ref_2" epub:type="noteref" class="ru">и</a> <a href="#ref_3" epub:type="noteref" class="ru">Миссис</a> Dursley, <a href="#ref_4" epub:type="noteref" class="ru">из</a> <a href="#ref_5" epub:type="noteref" class="ru">номера</a> <a href="#ref_6" epub:type="noteref" class="ru">четыре</a>, Privet Drive, <a href="#ref_7" epub:type="noteref" class="ru">были</a> proud <a href="#ref_8" epub:type="noteref" class="ru">сказать</a> <a href="#ref_9" epub:type="noteref" class="ru">что</a> <a href="#ref_10" epub:type="noteref" class="ru">они</a> <a href="#ref_11" epub:type="noteref" class="ru">были</a> perfectly <a href="#ref_12" epub:type="noteref" class="ru">нормальными</a>, <a href="#ref_13" epub:type="noteref" class="ru">спасибо</a> <a href="#ref_14" epub:type="noteref" class="ru">очень</a> much. <a href="#ref_15" epub:type="noteref" class="ru">Они</a> <a href="#ref_16" epub:type="noteref" class="ru">были</a> <a href="#ref_17" epub:type="noteref" class="ru">последними</a> <a href="#ref_18" epub:type="noteref" class="ru">людьми</a> you’d expect <a href="#ref_19" epub:type="noteref" class="ru">быть</a> involved <a href="#ref_20" epub:type="noteref" class="ru">в</a> anything strange <a href="#ref_21" epub:type="noteref" class="ru">или</a> mysterious, <a href="#ref_22" epub:type="noteref" class="ru">потому что</a> <a href="#ref_23" epub:type="noteref" class="ru">они</a> <a href="#ref_24" epub:type="noteref" class="ru">просто</a> <a href="#ref_25" epub:type="noteref" class="ru">не</a> <a href="#ref_26" epub:type="noteref" class="ru">держали</a> <a href="#ref_27" epub:type="noteref" class="ru">такое</a> nonsense.<p><p><a href="#ref_28" epub:type="noteref" class="ru">Мистер</a> Dursley <a href="#ref_29" epub:type="noteref" class="ru">был</a> <a href="#ref_30" epub:type="noteref" class="ru">директором</a> <a href="#ref_31" epub:type="noteref" class="ru">фирмы</a> <a href="#ref_32" epub:type="noteref" class="ru">под</a> <a href="#ref_33" epub:type="noteref" class="ru">названием</a> Grunnings, <a href="#ref_34" epub:type="noteref" class="ru">которая</a> <a href="#ref_35" epub:type="noteref" class="ru">делала</a> drills. <a href="#ref_36" epub:type="noteref" class="ru">Он</a> <a href="#ref_37" epub:type="noteref" class="ru">был</a> <a href="#ref_38" epub:type="noteref" class="ru">большим</a>, beefy <a href="#ref_39" epub:type="noteref" class="ru">человеком</a> <a href="#ref_40" epub:type="noteref" class="ru">с</a> <a href="#ref_41" epub:type="noteref" class="ru">едва</a> <a href="#ref_42" epub:type="noteref" class="ru">любой</a> <a href="#ref_43" epub:type="noteref" class="ru">шеей</a>, <a href="#ref_44" epub:type="noteref" class="ru">хотя</a> <a href="#ref_45" epub:type="noteref" class="ru">у</a> <a href="#ref_46" epub:type="noteref" class="ru">него</a> <a href="#ref_47" epub:type="noteref" class="ru">был</a> <a href="#ref_48" epub:type="noteref" class="ru">очень</a> <a href="#ref_49" epub:type="noteref" class="ru">большой</a> <a href="#ref_50" epub:type="noteref" class="ru">усы</a>. <a href="#ref_51" epub:type="noteref" class="ru">Миссис</a> Dursley <a href="#ref_52" epub:type="noteref" class="ru">была</a> thin <a href="#ref_53" epub:type="noteref" class="ru">и</a> blonde <a href="#ref_54" epub:type="noteref" class="ru">и</a> <a href="#ref_55" epub:type="noteref" class="ru">имела</a> <a href="#ref_56" epub:type="noteref" class="ru">почти</a> <a href="#ref_57" epub:type="noteref" class="ru">в</a> <a href="#ref_58" epub:type="noteref" class="ru">два</a> <a href="#ref_59" epub:type="noteref" class="ru">раза</a> more <a href="#ref_60" epub:type="noteref" class="ru">шеи</a>, <a href="#ref_61" epub:type="noteref" class="ru">что</a> <a href="#ref_62" epub:type="noteref" class="ru">было</a> <a href="#ref_63" epub:type="noteref" class="ru">очень</a> <a href="#ref_64" epub:type="noteref" class="ru">полезно</a> <a href="#ref_65" epub:type="noteref" class="ru">как</a> <a href="#ref_66" epub:type="noteref" class="ru">она</a> <a href="#ref_67" epub:type="noteref" class="ru">проводила</a> <a href="#ref_68" epub:type="noteref" class="ru">так</a> <a href="#ref_69" epub:type="noteref" class="ru">много</a> <a href="#ref_70" epub:type="noteref" class="ru">ее</a> <a href="#ref_71" epub:type="noteref" class="ru">времени</a> <a href="#ref_72" epub:type="noteref" class="ru">над</a> garden fences, <a href="#ref_73" epub:type="noteref" class="ru">шпионя</a> <a href="#ref_74" epub:type="noteref" class="ru">за</a> <a href="#ref_75" epub:type="noteref" class="ru">соседями</a>. <a href="#ref_76" epub:type="noteref" class="ru">У</a> Dursleys <a href="#ref_77" epub:type="noteref" class="ru">был</a> <a href="#ref_78" epub:type="noteref" class="ru">небольшой</a> <a href="#ref_79" epub:type="noteref" class="ru">сын</a> <a href="#ref_80" epub:type="noteref" class="ru">под</a> <a href="#ref_81" epub:type="noteref" class="ru">названием</a> Dudley <a href="#ref_82" epub:type="noteref" class="ru">и</a> <a href="#ref_83" epub:type="noteref" class="ru">в</a> <a href="#ref_84" epub:type="noteref" class="ru">их</a> <a href="#ref_85" epub:type="noteref" class="ru">мнении</a> <a href="#ref_86" epub:type="noteref" class="ru">не</a> <a href="#ref_87" epub:type="noteref" class="ru">было</a> <a href="#ref_88" epub:type="noteref" class="ru">лучше</a> <a href="#ref_89" epub:type="noteref" class="ru">мальчика</a> <a href="#ref_90" epub:type="noteref" class="ru">нигде</a>.<p><p><a href="#ref_91" epub:type="noteref" class="ru">У</a> Dursleys <a href="#ref_92" epub:type="noteref" class="ru">было</a> <a href="#ref_93" epub:type="noteref" class="ru">все</a> <a href="#ref_94" epub:type="noteref" class="ru">они</a> <a href="#ref_95" epub:type="noteref" class="ru">хотели</a>, <a href="#ref_96" epub:type="noteref" class="ru">но</a> <a href="#ref_97" epub:type="noteref" class="ru">также</a> <a href="#ref_98" epub:type="noteref" class="ru">у</a> <a href="#ref_99" epub:type="noteref" class="ru">них</a> <a href="#ref_100" epub:type="noteref" class="ru">был</a> <a href="#ref_101" epub:type="noteref" class="ru">секрет</a>, <a href="#ref_102" epub:type="noteref" class="ru">и</a> <a href="#ref_103" epub:type="noteref" class="ru">их</a> <a href="#ref_104" epub:type="noteref" class="ru">самый</a> <a href="#ref_105" epub:type="noteref" class="ru">страх</a> <a href="#ref_106" epub:type="noteref" class="ru">был</a>, <a href="#ref_107" epub:type="noteref" class="ru">что</a> <a href="#ref_108" epub:type="noteref" class="ru">кто-то</a> <a href="#ref_109" epub:type="noteref" class="ru">может</a> <a href="#ref_110" epub:type="noteref" class="ru">найти</a> <a href="#ref_111" epub:type="noteref" class="ru">его</a>. <a href="#ref_112" epub:type="noteref" class="ru">Они</a> <a href="#ref_113" epub:type="noteref" class="ru">не</a> <a href="#ref_114" epub:type="noteref" class="ru">думали</a>, <a href="#ref_115" epub:type="noteref" class="ru">что</a> <a href="#ref_116" epub:type="noteref" class="ru">они</a> <a href="#ref_117" epub:type="noteref" class="ru">могли</a> bear <a href="#ref_118" epub:type="noteref" class="ru">это</a> <a href="#ref_119" epub:type="noteref" class="ru">если</a> <a href="#ref_120" epub:type="noteref" class="ru">кто-либо</a> found out <a href="#ref_121" epub:type="noteref" class="ru">о</a> the Potters. <a href="#ref_122" epub:type="noteref" class="ru">Миссис</a> Potter <a href="#ref_123" epub:type="noteref" class="ru">была</a> <a href="#ref_124" epub:type="noteref" class="ru">сестрой</a> <a href="#ref_125" epub:type="noteref" class="ru">Миссис</a> Dursley, <a href="#ref_126" epub:type="noteref" class="ru">но</a> <a href="#ref_127" epub:type="noteref" class="ru">они</a> <a href="#ref_128" epub:type="noteref" class="ru">не</a> met <a href="#ref_129" epub:type="noteref" class="ru">несколько</a> <a href="#ref_130" epub:type="noteref" class="ru">лет</a>; <a href="#ref_131" epub:type="noteref" class="ru">фактически</a>, <a href="#ref_132" epub:type="noteref" class="ru">Миссис</a> Dursley <a href="#ref_133" epub:type="noteref" class="ru">делала</a> <a href="#ref_134" epub:type="noteref" class="ru">вид</a> <a href="#ref_135" epub:type="noteref" class="ru">что</a> <a href="#ref_136" epub:type="noteref" class="ru">у</a> <a href="#ref_137" epub:type="noteref" class="ru">нее</a> <a href="#ref_138" epub:type="noteref" class="ru">нет</a> <a href="#ref_139" epub:type="noteref" class="ru">сестры</a>, <a href="#ref_140" epub:type="noteref" class="ru">потому что</a> <a href="#ref_141" epub:type="noteref" class="ru">ее</a> <a href="#ref_142" epub:type="noteref" class="ru">сестра</a> <a href="#ref_143" epub:type="noteref" class="ru">и</a> <a href="#ref_144" epub:type="noteref" class="ru">ее</a> good-for-nothing <a href="#ref_145" epub:type="noteref" class="ru">муж</a> <a href="#ref_146" epub:type="noteref" class="ru">были</a> <a href="#ref_147" epub:type="noteref" class="ru">настолько</a> unDursleyish <a href="#ref_148" epub:type="noteref" class="ru">как</a> <a href="#ref_149" epub:type="noteref" class="ru">это</a> <a href="#ref_150" epub:type="noteref" class="ru">было</a> <a href="#ref_151" epub:type="noteref" class="ru">возможно</a> <a href="#ref_152" epub:type="noteref" class="ru">быть</a>. <a href="#ref_153" epub:type="noteref" class="ru">У</a> Dursleys knew <a href="#ref_154" epub:type="noteref" class="ru">что</a> the Potters <a href="#ref_155" epub:type="noteref" class="ru">имели</a> <a href="#ref_156" epub:type="noteref" class="ru">небольшой</a> <a href="#ref_157" epub:type="noteref" class="ru">сын</a>, <a href="#ref_158" epub:type="noteref" class="ru">тоже</a>, <a href="#ref_159" epub:type="noteref" class="ru">но</a> <a href="#ref_160" epub:type="noteref" class="ru">они</a> <a href="#ref_161" epub:type="noteref" class="ru">его</a> <a href="#ref_162" epub:type="noteref" class="ru">никогда</a> <a href="#ref_163" epub:type="noteref" class="ru">даже</a> <a href="#ref_164" epub:type="noteref" class="ru">не</a> <a href="#ref_165" epub:type="noteref" class="ru">видели</a>. <a href="#ref_166" epub:type="noteref" class="ru">Этот</a> <a href="#ref_167" epub:type="noteref" class="ru">мальчик</a> <a href="#ref_168" epub:type="noteref" class="ru">был</a> <a href="#ref_169" epub:type="noteref" class="ru">другой</a> <a href="#ref_170" epub:type="noteref" class="ru">хорошая</a> <a href="#ref_171" epub:type="noteref" class="ru">причиной</a> <a href="#ref_172" epub:type="noteref" class="ru">для</a> <a href="#ref_173" epub:type="noteref" class="ru">того</a>, <a href="#ref_174" epub:type="noteref" class="ru">чтобы</a> <a href="#ref_175" epub:type="noteref" class="ru">держать</a> the Potters <a href="#ref_176" epub:type="noteref" class="ru">далеко</a>; <a href="#ref_177" epub:type="noteref" class="ru">они</a> <a href="#ref_178" epub:type="noteref" class="ru">не</a> <a href="#ref_179" epub:type="noteref" class="ru">хотели</a> Dudley <a href="#ref_180" epub:type="noteref" class="ru">общался</a> <a href="#ref_181" epub:type="noteref" class="ru">с</a> <a href="#ref_182" epub:type="noteref" class="ru">ребенком</a> <a href="#ref_183" epub:type="noteref" class="ru">как</a> <a href="#ref_184" epub:type="noteref" class="ru">этот</a>.<p><p><a href="#ref_185" epub:type="noteref" class="ru">Когда</a> <a href="#ref_186" epub:type="noteref" class="ru">Мистер</a> <a href="#ref_187" epub:type="noteref" class="ru">и</a> <a href="#ref_188" epub:type="noteref" class="ru">Миссис</a> Dursley <a href="#ref_189" epub:type="noteref" class="ru">проснулись</a> <a href="#ref_190" epub:type="noteref" class="ru">в</a> <a href="#ref_191" epub:type="noteref" class="ru">тот</a> <a href="#ref_192" epub:type="noteref" class="ru">серый</a> Tuesday <a href="#ref_193" epub:type="noteref" class="ru">наша</a> <a href="#ref_194" epub:type="noteref" class="ru">история</a> starts, <a href="#ref_195" epub:type="noteref" class="ru">там</a> <a href="#ref_196" epub:type="noteref" class="ru">было</a> <a href="#ref_197" epub:type="noteref" class="ru">ничего</a> <a href="#ref_198" epub:type="noteref" class="ru">о</a> the cloudy <a href="#ref_199" epub:type="noteref" class="ru">небе</a> <a href="#ref_200" epub:type="noteref" class="ru">снаружи</a> to suggest <a href="#ref_201" epub:type="noteref" class="ru">что</a> strange <a href="#ref_202" epub:type="noteref" class="ru">и</a> mysterious <a href="#ref_203" epub:type="noteref" class="ru">вещи</a> <a href="#ref_204" epub:type="noteref" class="ru">скоро</a> happen <a href="#ref_205" epub:type="noteref" class="ru">по</a> <a href="#ref_206" epub:type="noteref" class="ru">всей</a> <a href="#ref_207" epub:type="noteref" class="ru">стране</a>. <a href="#ref_208" epub:type="noteref" class="ru">Мистер</a> Dursley hummed <a href="#ref_209" epub:type="noteref" class="ru">как</a> <a href="#ref_210" epub:type="noteref" class="ru">он</a> <a href="#ref_211" epub:type="noteref" class="ru">взял</a> <a href="#ref_212" epub:type="noteref" class="ru">его</a> <a href="#ref_213" epub:type="noteref" class="ru">самый</a> boring tie <a href="#ref_214" epub:type="noteref" class="ru">для</a> <a href="#ref_215" epub:type="noteref" class="ru">работы</a> <a href="#ref_216" epub:type="noteref" class="ru">и</a> <a href="#ref_217" epub:type="noteref" class="ru">Миссис</a> Dursley gossiped away happily <a href="#ref_218" epub:type="noteref" class="ru">как</a> <a href="#ref_219" epub:type="noteref" class="ru">она</a> <a href="#ref_220" epub:type="noteref" class="ru">боролась</a> <a href="#ref_221" epub:type="noteref" class="ru">с</a> screaming Dudley <a href="#ref_222" epub:type="noteref" class="ru">в</a> <a href="#ref_223" epub:type="noteref" class="ru">его</a> <a href="#ref_224" epub:type="noteref" class="ru">высокий</a> chair.<p><p><a href="#ref_225" epub:type="noteref" class="ru">Никто</a> <a href="#ref_226" epub:type="noteref" class="ru">из</a> <a href="#ref_227" epub:type="noteref" class="ru">них</a> <a href="#ref_228" epub:type="noteref" class="ru">не</a> <a href="#ref_229" epub:type="noteref" class="ru">заметил</a> <a href="#ref_230" epub:type="noteref" class="ru">большую</a> owl <a href="#ref_231" epub:type="noteref" class="ru">пролетающую</a> <a href="#ref_232" epub:type="noteref" class="ru">мимо</a> <a href="#ref_233" epub:type="noteref" class="ru">окна</a>.<p><p><a href="#ref_234" epub:type="noteref" class="ru">В</a> <a href="#ref_235" epub:type="noteref" class="ru">половине</a> <a href="#ref_236" epub:type="noteref" class="ru">девятого</a>, <a href="#ref_237" epub:type="noteref" class="ru">Мистер</a> Dursley <a href="#ref_238" epub:type="noteref" class="ru">взял</a> <a href="#ref_239" epub:type="noteref" class="ru">его</a> <a href="#ref_240" epub:type="noteref" class="ru">портфель</a>, <a href="#ref_241" epub:type="noteref" class="ru">поцеловал</a> <a href="#ref_242" epub:type="noteref" class="ru">Миссис</a> Dursley <a href="#ref_243" epub:type="noteref" class="ru">в</a> <a href="#ref_244" epub:type="noteref" class="ru">щеку</a> <a href="#ref_245" epub:type="noteref" class="ru">и</a> <a href="#ref_246" epub:type="noteref" class="ru">попытался</a> <a href="#ref_247" epub:type="noteref" class="ru">поцеловать</a> Dudley goodbye <a href="#ref_248" epub:type="noteref" class="ru">но</a> missed, <a href="#ref_249" epub:type="noteref" class="ru">потому что</a> Dudley <a href="#ref_250" epub:type="noteref" class="ru">сейчас</a> <a href="#ref_251" epub:type="noteref" class="ru">имел</a> a tantrum <a href="#ref_252" epub:type="noteref" class="ru">и</a> <a href="#ref_253" epub:type="noteref" class="ru">бросал</a> <a href="#ref_254" epub:type="noteref" class="ru">его</a> cereal <a href="#ref_255" epub:type="noteref" class="ru">в</a> <a href="#ref_256" epub:type="noteref" class="ru">стены</a>. ‘Little tyke,’ chortled <a href="#ref_257" epub:type="noteref" class="ru">Мистер</a> Dursley <a href="#ref_258" epub:type="noteref" class="ru">как</a> <a href="#ref_259" epub:type="noteref" class="ru">он</a> <a href="#ref_260" epub:type="noteref" class="ru">оставил</a> <a href="#ref_261" epub:type="noteref" class="ru">дом</a>. <a href="#ref_262" epub:type="noteref" class="ru">Он</a> <a href="#ref_263" epub:type="noteref" class="ru">сел</a> <a href="#ref_264" epub:type="noteref" class="ru">в</a> <a href="#ref_265" epub:type="noteref" class="ru">его</a> <a href="#ref_266" epub:type="noteref" class="ru">машину</a> <a href="#ref_267" epub:type="noteref" class="ru">и</a> <a href="#ref_268" epub:type="noteref" class="ru">выехал</a> <a href="#ref_269" epub:type="noteref" class="ru">из</a> <a href="#ref_270" epub:type="noteref" class="ru">номера</a> <a href="#ref_271" epub:type="noteref" class="ru">четыре</a> drive.<p><p><a href="#ref_272" epub:type="noteref" class="ru">Это</a> <a href="#ref_273" epub:type="noteref" class="ru">было</a> <a href="#ref_274" epub:type="noteref" class="ru">на</a> <a href="#ref_275" epub:type="noteref" class="ru">углу</a> <a href="#ref_276" epub:type="noteref" class="ru">улицы</a> <a href="#ref_277" epub:type="noteref" class="ru">что</a> <a href="#ref_278" epub:type="noteref" class="ru">он</a> <a href="#ref_279" epub:type="noteref" class="ru">заметил</a> <a href="#ref_280" epub:type="noteref" class="ru">первый</a> <a href="#ref_281" epub:type="noteref" class="ru">знак</a> <a href="#ref_282" epub:type="noteref" class="ru">чего-то</a> peculiar – <a href="#ref_283" epub:type="noteref" class="ru">кошка</a> <a href="#ref_284" epub:type="noteref" class="ru">читающая</a> <a href="#ref_285" epub:type="noteref" class="ru">карту</a>. <a href="#ref_286" epub:type="noteref" class="ru">На</a> <a href="#ref_287" epub:type="noteref" class="ru">секунду</a>, <a href="#ref_288" epub:type="noteref" class="ru">Мистер</a> Dursley <a href="#ref_289" epub:type="noteref" class="ru">не</a> realise <a href="#ref_290" epub:type="noteref" class="ru">что</a> <a href="#ref_291" epub:type="noteref" class="ru">он</a> <a href="#ref_292" epub:type="noteref" class="ru">видел</a> – <a href="#ref_293" epub:type="noteref" class="ru">затем</a> <a href="#ref_294" epub:type="noteref" class="ru">он</a> <a href="#ref_295" epub:type="noteref" class="ru">повернул</a> <a href="#ref_296" epub:type="noteref" class="ru">его</a> <a href="#ref_297" epub:type="noteref" class="ru">голову</a> <a href="#ref_298" epub:type="noteref" class="ru">вокруг</a> <a href="#ref_299" epub:type="noteref" class="ru">посмотреть</a> <a href="#ref_300" epub:type="noteref" class="ru">снова</a>. <a href="#ref_301" epub:type="noteref" class="ru">Там</a> <a href="#ref_302" epub:type="noteref" class="ru">была</a> <a href="#ref_303" epub:type="noteref" class="ru">кошка</a> <a href="#ref_304" epub:type="noteref" class="ru">стоящая</a> <a href="#ref_305" epub:type="noteref" class="ru">на</a> <a href="#ref_306" epub:type="noteref" class="ru">углу</a> Privet Drive, <a href="#ref_307" epub:type="noteref" class="ru">но</a> <a href="#ref_308" epub:type="noteref" class="ru">там</a> <a href="#ref_309" epub:type="noteref" class="ru">не</a> <a href="#ref_310" epub:type="noteref" class="ru">было</a> <a href="#ref_311" epub:type="noteref" class="ru">карты</a> <a href="#ref_312" epub:type="noteref" class="ru">в</a> <a href="#ref_313" epub:type="noteref" class="ru">виде</a>. <a href="#ref_314" epub:type="noteref" class="ru">О</a> <a href="#ref_315" epub:type="noteref" class="ru">чем</a> <a href="#ref_316" epub:type="noteref" class="ru">он</a> <a href="#ref_317" epub:type="noteref" class="ru">мог</a> <a href="#ref_318" epub:type="noteref" class="ru">думать</a>? <a href="#ref_319" epub:type="noteref" class="ru">Это</a> <a href="#ref_320" epub:type="noteref" class="ru">должно</a> <a href="#ref_321" epub:type="noteref" class="ru">быть</a> a trick <a href="#ref_322" epub:type="noteref" class="ru">света</a>. <a href="#ref_323" epub:type="noteref" class="ru">Мистер</a> Dursley <a href="#ref_324" epub:type="noteref" class="ru">моргнул</a> <a href="#ref_325" epub:type="noteref" class="ru">и</a> <a href="#ref_326" epub:type="noteref" class="ru">посмотрел</a> <a href="#ref_327" epub:type="noteref" class="ru">на</a> <a href="#ref_328" epub:type="noteref" class="ru">кошку</a>. <a href="#ref_329" epub:type="noteref" class="ru">Она</a> <a href="#ref_330" epub:type="noteref" class="ru">смотрела</a> <a href="#ref_331" epub:type="noteref" class="ru">назад</a>. <a href="#ref_332" epub:type="noteref" class="ru">Как</a> <a href="#ref_333" epub:type="noteref" class="ru">Мистер</a> Dursley <a href="#ref_334" epub:type="noteref" class="ru">ехал</a> <a href="#ref_335" epub:type="noteref" class="ru">вокруг</a> <a href="#ref_336" epub:type="noteref" class="ru">угла</a> <a href="#ref_337" epub:type="noteref" class="ru">и</a> <a href="#ref_338" epub:type="noteref" class="ru">вверх</a> <a href="#ref_339" epub:type="noteref" class="ru">по</a> <a href="#ref_340" epub:type="noteref" class="ru">дороге</a>, <a href="#ref_341" epub:type="noteref" class="ru">он</a> <a href="#ref_342" epub:type="noteref" class="ru">смотрел</a> <a href="#ref_343" epub:type="noteref" class="ru">на</a> <a href="#ref_344" epub:type="noteref" class="ru">кошку</a> <a href="#ref_345" epub:type="noteref" class="ru">в</a> <a href="#ref_346" epub:type="noteref" class="ru">его</a> mirror. <a href="#ref_347" epub:type="noteref" class="ru">Она</a> <a href="#ref_348" epub:type="noteref" class="ru">сейчас</a> <a href="#ref_349" epub:type="noteref" class="ru">читала</a> <a href="#ref_350" epub:type="noteref" class="ru">знак</a> <a href="#ref_351" epub:type="noteref" class="ru">который</a> <a href="#ref_352" epub:type="noteref" class="ru">сказал</a> Privet Drive – <a href="#ref_353" epub:type="noteref" class="ru">нет</a>, <a href="#ref_354" epub:type="noteref" class="ru">смотрела</a> <a href="#ref_355" epub:type="noteref" class="ru">на</a> <a href="#ref_356" epub:type="noteref" class="ru">знак</a>; <a href="#ref_357" epub:type="noteref" class="ru">кошки</a> <a href="#ref_358" epub:type="noteref" class="ru">не</a> <a href="#ref_359" epub:type="noteref" class="ru">могут</a> <a href="#ref_360" epub:type="noteref" class="ru">читать</a> <a href="#ref_361" epub:type="noteref" class="ru">карты</a> <a href="#ref_362" epub:type="noteref" class="ru">или</a> <a href="#ref_363" epub:type="noteref" class="ru">знаки</a>. <a href="#ref_364" epub:type="noteref" class="ru">Мистер</a> Dursley <a href="#ref_365" epub:type="noteref" class="ru">дал</a> <a href="#ref_366" epub:type="noteref" class="ru">себе</a> <a href="#ref_367" epub:type="noteref" class="ru">небольшую</a> shake <a href="#ref_368" epub:type="noteref" class="ru">и</a> <a href="#ref_369" epub:type="noteref" class="ru">положил</a> <a href="#ref_370" epub:type="noteref" class="ru">кошку</a> <a href="#ref_371" epub:type="noteref" class="ru">вне</a> <a href="#ref_372" epub:type="noteref" class="ru">его</a> <a href="#ref_373" epub:type="noteref" class="ru">ума</a>. <a href="#ref_374" epub:type="noteref" class="ru">Как</a> <a href="#ref_375" epub:type="noteref" class="ru">он</a> <a href="#ref_376" epub:type="noteref" class="ru">ехал</a> <a href="#ref_377" epub:type="noteref" class="ru">к</a> <a href="#ref_378" epub:type="noteref" class="ru">городу</a> <a href="#ref_379" epub:type="noteref" class="ru">он</a> <a href="#ref_380" epub:type="noteref" class="ru">думал</a> <a href="#ref_381" epub:type="noteref" class="ru">ни</a> <a href="#ref_382" epub:type="noteref" class="ru">о</a> <a href="#ref_383" epub:type="noteref" class="ru">чем</a> <a href="#ref_384" epub:type="noteref" class="ru">большой</a> <a href="#ref_385" epub:type="noteref" class="ru">заказ</a> <a href="#ref_386" epub:type="noteref" class="ru">сверл</a> <a href="#ref_387" epub:type="noteref" class="ru">он</a> <a href="#ref_388" epub:type="noteref" class="ru">был</a> <a href="#ref_389" epub:type="noteref" class="ru">надеяться</a> <a href="#ref_390" epub:type="noteref" class="ru">получить</a> <a href="#ref_391" epub:type="noteref" class="ru">в</a> <a href="#ref_392" epub:type="noteref" class="ru">этот</a> <a href="#ref_393" epub:type="noteref" class="ru">день</a>.<p><p><a href="#ref_394" epub:type="noteref" class="ru">Но</a> <a href="#ref_395" epub:type="noteref" class="ru">на</a> <a href="#ref_396" epub:type="noteref" class="ru">краю</a> <a href="#ref_397" epub:type="noteref" class="ru">города</a>, drills <a href="#ref_398" epub:type="noteref" class="ru">были</a> <a href="#ref_399" epub:type="noteref" class="ru">вытеснены</a> <a href="#ref_400" epub:type="noteref" class="ru">из</a> <a href="#ref_401" epub:type="noteref" class="ru">его</a> <a href="#ref_402" epub:type="noteref" class="ru">ума</a> <a href="#ref_403" epub:type="noteref" class="ru">чем-то</a> <a href="#ref_404" epub:type="noteref" class="ru">другим</a>. <a href="#ref_405" epub:type="noteref" class="ru">Как</a> <a href="#ref_406" epub:type="noteref" class="ru">он</a> <a href="#ref_407" epub:type="noteref" class="ru">сидел</a> <a href="#ref_408" epub:type="noteref" class="ru">в</a> <a href="#ref_409" epub:type="noteref" class="ru">обычном</a> <a href="#ref_410" epub:type="noteref" class="ru">утреннем</a> traffic jam, <a href="#ref_411" epub:type="noteref" class="ru">он</a> <a href="#ref_412" epub:type="noteref" class="ru">не</a> <a href="#ref_413" epub:type="noteref" class="ru">мог</a> help <a href="#ref_414" epub:type="noteref" class="ru">заметить</a> <a href="#ref_415" epub:type="noteref" class="ru">что</a> <a href="#ref_416" epub:type="noteref" class="ru">там</a> <a href="#ref_417" epub:type="noteref" class="ru">казалось</a> <a href="#ref_418" epub:type="noteref" class="ru">быть</a> <a href="#ref_419" epub:type="noteref" class="ru">много</a> <a href="#ref_420" epub:type="noteref" class="ru">странно</a> <a href="#ref_421" epub:type="noteref" class="ru">одетых</a> <a href="#ref_422" epub:type="noteref" class="ru">людей</a> <a href="#ref_423" epub:type="noteref" class="ru">вокруг</a>. <a href="#ref_424" epub:type="noteref" class="ru">Люди</a> <a href="#ref_425" epub:type="noteref" class="ru">в</a> cloaks. <a href="#ref_426" epub:type="noteref" class="ru">Мистер</a> Dursley <a href="#ref_427" epub:type="noteref" class="ru">не</a> <a href="#ref_428" epub:type="noteref" class="ru">мог</a> bear <a href="#ref_429" epub:type="noteref" class="ru">людей</a> кто|who <a href="#ref_431" epub:type="noteref" class="ru">одевается</a> <a href="#ref_432" epub:type="noteref" class="ru">в</a> <a href="#ref_433" epub:type="noteref" class="ru">смешные</a> <a href="#ref_434" epub:type="noteref" class="ru">вещи</a> – the get-ups <a href="#ref_435" epub:type="noteref" class="ru">вы</a> <a href="#ref_436" epub:type="noteref" class="ru">видели</a> <a href="#ref_437" epub:type="noteref" class="ru">на</a> <a href="#ref_438" epub:type="noteref" class="ru">молодых</a> <a href="#ref_439" epub:type="noteref" class="ru">людях</a>! <a href="#ref_440" epub:type="noteref" class="ru">Он</a> <a href="#ref_441" epub:type="noteref" class="ru">предположил</a> <a href="#ref_442" epub:type="noteref" class="ru">это</a> <a href="#ref_443" epub:type="noteref" class="ru">была</a> <a href="#ref_444" epub:type="noteref" class="ru">какая-то</a> <a href="#ref_445" epub:type="noteref" class="ru">глупая</a> <a href="#ref_446" epub:type="noteref" class="ru">новая</a> <a href="#ref_447" epub:type="noteref" class="ru">мода</a>. <a href="#ref_448" epub:type="noteref" class="ru">Он</a> <a href="#ref_449" epub:type="noteref" class="ru">стучал</a> <a href="#ref_450" epub:type="noteref" class="ru">его</a> <a href="#ref_451" epub:type="noteref" class="ru">пальцами</a> <a href="#ref_452" epub:type="noteref" class="ru">на</a> <a href="#ref_453" epub:type="noteref" class="ru">рулевом</a> <a href="#ref_454" epub:type="noteref" class="ru">колесе</a> <a href="#ref_455" epub:type="noteref" class="ru">и</a> <a href="#ref_456" epub:type="noteref" class="ru">его</a> <a href="#ref_457" epub:type="noteref" class="ru">глаза</a> <a href="#ref_458" epub:type="noteref" class="ru">упали</a> <a href="#ref_459" epub:type="noteref" class="ru">на</a> a huddle <a href="#ref_460" epub:type="noteref" class="ru">этих</a> weirdos <a href="#ref_461" epub:type="noteref" class="ru">стоящих</a> <a href="#ref_462" epub:type="noteref" class="ru">довольно</a> <a href="#ref_463" epub:type="noteref" class="ru">близко</a> <a href="#ref_464" epub:type="noteref" class="ru">рядом</a>. <a href="#ref_465" epub:type="noteref" class="ru">Они</a> <a href="#ref_466" epub:type="noteref" class="ru">были</a> <a href="#ref_467" epub:type="noteref" class="ru">шепчущимися</a> <a href="#ref_468" epub:type="noteref" class="ru">вместе</a>. <a href="#ref_469" epub:type="noteref" class="ru">Мистер</a> Dursley <a href="#ref_470" epub:type="noteref" class="ru">был</a> enraged <a href="#ref_471" epub:type="noteref" class="ru">видеть</a> <a href="#ref_472" epub:type="noteref" class="ru">что</a> <a href="#ref_473" epub:type="noteref" class="ru">пара</a> <a href="#ref_474" epub:type="noteref" class="ru">из</a> <a href="#ref_475" epub:type="noteref" class="ru">них</a> <a href="#ref_476" epub:type="noteref" class="ru">не</a> <a href="#ref_477" epub:type="noteref" class="ru">молодыми</a> <a href="#ref_478" epub:type="noteref" class="ru">совсем</a>; <a href="#ref_479" epub:type="noteref" class="ru">почему</a>, <a href="#ref_480" epub:type="noteref" class="ru">этот</a> <a href="#ref_481" epub:type="noteref" class="ru">человек</a> <a href="#ref_482" epub:type="noteref" class="ru">должен</a> <a href="#ref_483" epub:type="noteref" class="ru">быть</a> <a href="#ref_484" epub:type="noteref" class="ru">старше</a> <a href="#ref_485" epub:type="noteref" class="ru">чем</a> <a href="#ref_486" epub:type="noteref" class="ru">он</a> <a href="#ref_487" epub:type="noteref" class="ru">был</a>, <a href="#ref_488" epub:type="noteref" class="ru">и</a> <a href="#ref_489" epub:type="noteref" class="ru">носить</a> <a href="#ref_490" epub:type="noteref" class="ru">зеленый</a> cloak! The nerve <a href="#ref_491" epub:type="noteref" class="ru">из</a> <a href="#ref_492" epub:type="noteref" class="ru">него</a>! <a href="#ref_493" epub:type="noteref" class="ru">Но</a> <a href="#ref_494" epub:type="noteref" class="ru">затем</a> <a href="#ref_495" epub:type="noteref" class="ru">это</a> struck <a href="#ref_496" epub:type="noteref" class="ru">Мистер</a> Dursley <a href="#ref_497" epub:type="noteref" class="ru">что</a> <a href="#ref_498" epub:type="noteref" class="ru">это</a> <a href="#ref_499" epub:type="noteref" class="ru">было</a> probably <a href="#ref_500" epub:type="noteref" class="ru">некая</a> silly stunt – <a href="#ref_501" epub:type="noteref" class="ru">эти</a> <a href="#ref_502" epub:type="noteref" class="ru">люди</a> <a href="#ref_503" epub:type="noteref" class="ru">были</a> <a href="#ref_504" epub:type="noteref" class="ru">очевидно</a> <a href="#ref_505" epub:type="noteref" class="ru">собирать</a> <a href="#ref_506" epub:type="noteref" class="ru">для</a> <a href="#ref_507" epub:type="noteref" class="ru">чего-то</a> … <a href="#ref_508" epub:type="noteref" class="ru">да</a>, <a href="#ref_509" epub:type="noteref" class="ru">это</a> <a href="#ref_510" epub:type="noteref" class="ru">будет</a> <a href="#ref_511" epub:type="noteref" class="ru">это</a>. <a href="#ref_512" epub:type="noteref" class="ru">Движение</a> moved <a href="#ref_513" epub:type="noteref" class="ru">на</a>, <a href="#ref_514" epub:type="noteref" class="ru">и</a> <a href="#ref_515" epub:type="noteref" class="ru">несколько</a> <a href="#ref_516" epub:type="noteref" class="ru">минут</a> <a href="#ref_517" epub:type="noteref" class="ru">позже</a>, <a href="#ref_518" epub:type="noteref" class="ru">Мистер</a> Dursley <a href="#ref_519" epub:type="noteref" class="ru">приехал</a> <a href="#ref_520" epub:type="noteref" class="ru">на</a> the Grunnings <a href="#ref_521" epub:type="noteref" class="ru">машина</a> park, <a href="#ref_522" epub:type="noteref" class="ru">его</a> <a href="#ref_523" epub:type="noteref" class="ru">ум</a> <a href="#ref_524" epub:type="noteref" class="ru">назад</a> <a href="#ref_525" epub:type="noteref" class="ru">на</a> drills.<p>
+        
+        <section class="footnotes">
+            
         <aside id="ref_1" epub:type="footnote">
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
+        </aside>
+        
+
+        <aside id="ref_2" epub:type="footnote">
             <p><strong>and</strong></p>
             <p><em>Base: и</em></p>
         </aside>
         
 
-        <aside id="ref_2" epub:type="footnote">
+        <aside id="ref_3" epub:type="footnote">
+            <p><strong>Mrs</strong></p>
+            <p><em>Base: миссис</em></p>
+        </aside>
+        
+
+        <aside id="ref_4" epub:type="footnote">
+            <p><strong>of</strong></p>
+            <p><em>Base: из</em></p>
+        </aside>
+        
+
+        <aside id="ref_5" epub:type="footnote">
             <p><strong>number</strong></p>
             <p><em>Base: номер</em></p>
         </aside>
         
 
-        <aside id="ref_3" epub:type="footnote">
+        <aside id="ref_6" epub:type="footnote">
+            <p><strong>four</strong></p>
+            <p><em>Base: четыре</em></p>
+        </aside>
+        
+
+        <aside id="ref_7" epub:type="footnote">
             <p><strong>were</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
-        <aside id="ref_4" epub:type="footnote">
+        <aside id="ref_8" epub:type="footnote">
+            <p><strong>to say</strong></p>
+            <p><em>Base: сказать</em></p>
+        </aside>
+        
+
+        <aside id="ref_9" epub:type="footnote">
             <p><strong>that</strong></p>
             <p><em>Base: что</em></p>
         </aside>
         
 
-        <aside id="ref_5" epub:type="footnote">
+        <aside id="ref_10" epub:type="footnote">
+            <p><strong>they</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_11" epub:type="footnote">
             <p><strong>were</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
-        <aside id="ref_6" epub:type="footnote">
-            <p><strong>you</strong></p>
-            <p><em>Base: вы</em></p>
+        <aside id="ref_12" epub:type="footnote">
+            <p><strong>normal</strong></p>
+            <p><em>Base: нормальный</em></p>
         </aside>
         
 
-        <aside id="ref_7" epub:type="footnote">
+        <aside id="ref_13" epub:type="footnote">
+            <p><strong>thank you</strong></p>
+            <p><em>Base: спасибо</em></p>
+        </aside>
+        
+
+        <aside id="ref_14" epub:type="footnote">
             <p><strong>very</strong></p>
             <p><em>Base: очень</em></p>
         </aside>
         
 
-        <aside id="ref_8" epub:type="footnote">
+        <aside id="ref_15" epub:type="footnote">
+            <p><strong>They</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_16" epub:type="footnote">
             <p><strong>were</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
-        <aside id="ref_9" epub:type="footnote">
-            <p><strong>you</strong></p>
-            <p><em>Base: вы</em></p>
+        <aside id="ref_17" epub:type="footnote">
+            <p><strong>the last</strong></p>
+            <p><em>Base: последнее</em></p>
         </aside>
         
 
-        <aside id="ref_10" epub:type="footnote">
-            <p><strong>be</strong></p>
+        <aside id="ref_18" epub:type="footnote">
+            <p><strong>people</strong></p>
+            <p><em>Base: люди</em></p>
+        </aside>
+        
+
+        <aside id="ref_19" epub:type="footnote">
+            <p><strong>to be</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
-        <aside id="ref_11" epub:type="footnote">
+        <aside id="ref_20" epub:type="footnote">
+            <p><strong>in</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_21" epub:type="footnote">
             <p><strong>or</strong></p>
             <p><em>Base: или</em></p>
         </aside>
         
 
-        <aside id="ref_12" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_13" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_14" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_15" epub:type="footnote">
-            <p><strong>man</strong></p>
-            <p><em>Base: мужчина</em></p>
-        </aside>
-        
-
-        <aside id="ref_16" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_17" epub:type="footnote">
-            <p><strong>very</strong></p>
-            <p><em>Base: очень</em></p>
-        </aside>
-        
-
-        <aside id="ref_18" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_19" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
-        </aside>
-        
-
-        <aside id="ref_20" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
-        </aside>
-        
-
-        <aside id="ref_21" epub:type="footnote">
-            <p><strong>very</strong></p>
-            <p><em>Base: очень</em></p>
-        </aside>
-        
-
         <aside id="ref_22" epub:type="footnote">
-            <p><strong>son</strong></p>
-            <p><em>Base: сын</em></p>
+            <p><strong>because</strong></p>
+            <p><em>Base: потому что</em></p>
         </aside>
         
 
         <aside id="ref_23" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>they</strong></p>
+            <p><em>Base: он</em></p>
         </aside>
         
 
         <aside id="ref_24" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>just</strong></p>
+            <p><em>Base: просто</em></p>
         </aside>
         
 
         <aside id="ref_25" epub:type="footnote">
-            <p><strong>no</strong></p>
+            <p><strong>didn’t</strong></p>
             <p><em>Base: не</em></p>
         </aside>
         
 
         <aside id="ref_26" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
+            <p><strong>hold</strong></p>
+            <p><em>Base: держать</em></p>
         </aside>
         
 
         <aside id="ref_27" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>such</strong></p>
+            <p><em>Base: такие</em></p>
         </aside>
         
 
         <aside id="ref_28" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
         </aside>
         
 
         <aside id="ref_29" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
         </aside>
         
 
         <aside id="ref_30" epub:type="footnote">
-            <p><strong>it</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>the director</strong></p>
+            <p><em>Base: директор</em></p>
         </aside>
         
 
         <aside id="ref_31" epub:type="footnote">
-            <p><strong>it</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>of a firm</strong></p>
+            <p><em>Base: фирма</em></p>
         </aside>
         
 
         <aside id="ref_32" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>called</strong></p>
+            <p><em>Base: под</em></p>
         </aside>
         
 
         <aside id="ref_33" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>name</strong></p>
+            <p><em>Base: название</em></p>
         </aside>
         
 
         <aside id="ref_34" epub:type="footnote">
-            <p><strong>were</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>which</strong></p>
+            <p><em>Base: который</em></p>
         </aside>
         
 
         <aside id="ref_35" epub:type="footnote">
-            <p><strong>it</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>made</strong></p>
+            <p><em>Base: сделать</em></p>
         </aside>
         
 
         <aside id="ref_36" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>He</strong></p>
+            <p><em>Base: он</em></p>
         </aside>
         
 
         <aside id="ref_37" epub:type="footnote">
-            <p><strong>be</strong></p>
+            <p><strong>was</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
         <aside id="ref_38" epub:type="footnote">
-            <p><strong>what</strong></p>
-            <p><em>Base: что</em></p>
+            <p><strong>a big</strong></p>
+            <p><em>Base: большой</em></p>
         </aside>
         
 
         <aside id="ref_39" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
+            <p><strong>man</strong></p>
+            <p><em>Base: человек</em></p>
         </aside>
         
 
         <aside id="ref_40" epub:type="footnote">
-            <p><strong>son</strong></p>
-            <p><em>Base: сын</em></p>
+            <p><strong>with</strong></p>
+            <p><em>Base: со</em></p>
         </aside>
         
 
         <aside id="ref_41" epub:type="footnote">
-            <p><strong>never</strong></p>
-            <p><em>Base: не</em></p>
+            <p><strong>hardly</strong></p>
+            <p><em>Base: едва</em></p>
         </aside>
         
 
         <aside id="ref_42" epub:type="footnote">
-            <p><strong>seen</strong></p>
-            <p><em>Base: видеть</em></p>
+            <p><strong>any</strong></p>
+            <p><em>Base: любой</em></p>
         </aside>
         
 
         <aside id="ref_43" epub:type="footnote">
-            <p><strong>This</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>neck</strong></p>
+            <p><em>Base: шея</em></p>
         </aside>
         
 
         <aside id="ref_44" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>although</strong></p>
+            <p><em>Base: хотя</em></p>
         </aside>
         
 
         <aside id="ref_45" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>he did have</strong></p>
+            <p><em>Base: у</em></p>
         </aside>
         
 
         <aside id="ref_46" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>he</strong></p>
+            <p><em>Base: он</em></p>
         </aside>
         
 
         <aside id="ref_47" epub:type="footnote">
-            <p><strong>was</strong></p>
+            <p><strong>have</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
         <aside id="ref_48" epub:type="footnote">
-            <p><strong>nothing</strong></p>
-            <p><em>Base: никто</em></p>
+            <p><strong>very</strong></p>
+            <p><em>Base: очень</em></p>
         </aside>
         
 
         <aside id="ref_49" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
+            <p><strong>large</strong></p>
+            <p><em>Base: большой</em></p>
         </aside>
         
 
         <aside id="ref_50" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>moustache</strong></p>
+            <p><em>Base: усы</em></p>
         </aside>
         
 
         <aside id="ref_51" epub:type="footnote">
-            <p><strong>be</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>Mrs</strong></p>
+            <p><em>Base: миссис</em></p>
         </aside>
         
 
         <aside id="ref_52" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
         </aside>
         
 
@@ -373,170 +373,170 @@
         
 
         <aside id="ref_54" epub:type="footnote">
-            <p><strong>None</strong></p>
-            <p><em>Base: никто</em></p>
+            <p><strong>and</strong></p>
+            <p><em>Base: и</em></p>
         </aside>
         
 
         <aside id="ref_55" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>had</strong></p>
+            <p><em>Base: иметь</em></p>
         </aside>
         
 
         <aside id="ref_56" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>nearly</strong></p>
+            <p><em>Base: почти</em></p>
         </aside>
         
 
         <aside id="ref_57" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>twice</strong></p>
+            <p><em>Base: в</em></p>
         </aside>
         
 
         <aside id="ref_58" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>twice</strong></p>
+            <p><em>Base: два</em></p>
         </aside>
         
 
         <aside id="ref_59" epub:type="footnote">
-            <p><strong>house</strong></p>
-            <p><em>Base: дом</em></p>
+            <p><strong>times</strong></p>
+            <p><em>Base: раз</em></p>
         </aside>
         
 
         <aside id="ref_60" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>neck</strong></p>
+            <p><em>Base: шея</em></p>
         </aside>
         
 
         <aside id="ref_61" epub:type="footnote">
-            <p><strong>car</strong></p>
-            <p><em>Base: машина</em></p>
+            <p><strong>which</strong></p>
+            <p><em>Base: что</em></p>
         </aside>
         
 
         <aside id="ref_62" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
         </aside>
         
 
         <aside id="ref_63" epub:type="footnote">
-            <p><strong>number</strong></p>
-            <p><em>Base: номер</em></p>
+            <p><strong>very</strong></p>
+            <p><em>Base: очень</em></p>
         </aside>
         
 
         <aside id="ref_64" epub:type="footnote">
-            <p><strong>It</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>useful</strong></p>
+            <p><em>Base: полезный</em></p>
         </aside>
         
 
         <aside id="ref_65" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>as</strong></p>
+            <p><em>Base: как</em></p>
         </aside>
         
 
         <aside id="ref_66" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
+            <p><strong>she</strong></p>
+            <p><em>Base: она</em></p>
         </aside>
         
 
         <aside id="ref_67" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>spent</strong></p>
+            <p><em>Base: проводить</em></p>
         </aside>
         
 
         <aside id="ref_68" epub:type="footnote">
-            <p><strong>didn’t</strong></p>
-            <p><em>Base: не</em></p>
+            <p><strong>so</strong></p>
+            <p><em>Base: так</em></p>
         </aside>
         
 
         <aside id="ref_69" epub:type="footnote">
-            <p><strong>what</strong></p>
-            <p><em>Base: что</em></p>
+            <p><strong>much</strong></p>
+            <p><em>Base: много</em></p>
         </aside>
         
 
         <aside id="ref_70" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>her</strong></p>
+            <p><em>Base: ее</em></p>
         </aside>
         
 
         <aside id="ref_71" epub:type="footnote">
-            <p><strong>seen</strong></p>
-            <p><em>Base: видеть</em></p>
+            <p><strong>time</strong></p>
+            <p><em>Base: время</em></p>
         </aside>
         
 
         <aside id="ref_72" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>over</strong></p>
+            <p><em>Base: над</em></p>
         </aside>
         
 
         <aside id="ref_73" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>spying</strong></p>
+            <p><em>Base: шпионить</em></p>
         </aside>
         
 
         <aside id="ref_74" epub:type="footnote">
-            <p><strong>wasn’t</strong></p>
-            <p><em>Base: не</em></p>
+            <p><strong>on</strong></p>
+            <p><em>Base: за</em></p>
         </aside>
         
 
         <aside id="ref_75" epub:type="footnote">
-            <p><strong>What</strong></p>
-            <p><em>Base: что</em></p>
+            <p><strong>the neighbours</strong></p>
+            <p><em>Base: сосед</em></p>
         </aside>
         
 
         <aside id="ref_76" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>The</strong></p>
+            <p><em>Base: у</em></p>
         </aside>
         
 
         <aside id="ref_77" epub:type="footnote">
-            <p><strong>been</strong></p>
+            <p><strong>had</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
         <aside id="ref_78" epub:type="footnote">
-            <p><strong>It</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>a small</strong></p>
+            <p><em>Base: небольшой</em></p>
         </aside>
         
 
         <aside id="ref_79" epub:type="footnote">
-            <p><strong>been</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>son</strong></p>
+            <p><em>Base: сын</em></p>
         </aside>
         
 
         <aside id="ref_80" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>called</strong></p>
+            <p><em>Base: под</em></p>
         </aside>
         
 
         <aside id="ref_81" epub:type="footnote">
-            <p><strong>It</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>name</strong></p>
+            <p><em>Base: название</em></p>
         </aside>
         
 
@@ -547,680 +547,680 @@
         
 
         <aside id="ref_83" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>in</strong></p>
+            <p><em>Base: в</em></p>
         </aside>
         
 
         <aside id="ref_84" epub:type="footnote">
-            <p><strong>It</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>their</strong></p>
+            <p><em>Base: их</em></p>
         </aside>
         
 
         <aside id="ref_85" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>opinion</strong></p>
+            <p><em>Base: мнение</em></p>
         </aside>
         
 
         <aside id="ref_86" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
-        </aside>
-        
-
-        <aside id="ref_87" epub:type="footnote">
             <p><strong>no</strong></p>
             <p><em>Base: не</em></p>
         </aside>
         
 
+        <aside id="ref_87" epub:type="footnote">
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
         <aside id="ref_88" epub:type="footnote">
-            <p><strong>or</strong></p>
-            <p><em>Base: или</em></p>
+            <p><strong>finer</strong></p>
+            <p><em>Base: лучше</em></p>
         </aside>
         
 
         <aside id="ref_89" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>boy</strong></p>
+            <p><em>Base: мальчик</em></p>
         </aside>
         
 
         <aside id="ref_90" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>anywhere</strong></p>
+            <p><em>Base: нигде</em></p>
         </aside>
         
 
         <aside id="ref_91" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>The</strong></p>
+            <p><em>Base: у</em></p>
         </aside>
         
 
         <aside id="ref_92" epub:type="footnote">
-            <p><strong>nothing</strong></p>
-            <p><em>Base: никто</em></p>
+            <p><strong>had</strong></p>
+            <p><em>Base: быть</em></p>
         </aside>
         
 
         <aside id="ref_93" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>everything</strong></p>
+            <p><em>Base: все</em></p>
         </aside>
         
 
         <aside id="ref_94" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>they</strong></p>
+            <p><em>Base: он</em></p>
         </aside>
         
 
         <aside id="ref_95" epub:type="footnote">
-            <p><strong>were</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>wanted</strong></p>
+            <p><em>Base: хотеть</em></p>
         </aside>
         
 
         <aside id="ref_96" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>but</strong></p>
+            <p><em>Base: но</em></p>
         </aside>
         
 
         <aside id="ref_97" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>also</strong></p>
+            <p><em>Base: также</em></p>
         </aside>
         
 
         <aside id="ref_98" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
+            <p><strong>had</strong></p>
+            <p><em>Base: у</em></p>
         </aside>
         
 
         <aside id="ref_99" epub:type="footnote">
-            <p><strong>be</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>they</strong></p>
+            <p><em>Base: их</em></p>
         </aside>
         
 
         <aside id="ref_100" epub:type="footnote">
-            <p><strong>you</strong></p>
-            <p><em>Base: вы</em></p>
-        </aside>
-        
-
-        <aside id="ref_101" epub:type="footnote">
-            <p><strong>saw</strong></p>
-            <p><em>Base: видеть</em></p>
-        </aside>
-        
-
-        <aside id="ref_102" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_103" epub:type="footnote">
-            <p><strong>this</strong></p>
-            <p><em>Base: это</em></p>
-        </aside>
-        
-
-        <aside id="ref_104" epub:type="footnote">
             <p><strong>was</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
-        <aside id="ref_105" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
+        <aside id="ref_101" epub:type="footnote">
+            <p><strong>a secret</strong></p>
+            <p><em>Base: секрет</em></p>
         </aside>
         
 
-        <aside id="ref_106" epub:type="footnote">
+        <aside id="ref_102" epub:type="footnote">
             <p><strong>and</strong></p>
             <p><em>Base: и</em></p>
         </aside>
         
 
-        <aside id="ref_107" epub:type="footnote">
-            <p><strong>were</strong></p>
-            <p><em>Base: быть</em></p>
+        <aside id="ref_103" epub:type="footnote">
+            <p><strong>their</strong></p>
+            <p><em>Base: их</em></p>
         </aside>
         
 
-        <aside id="ref_108" epub:type="footnote">
+        <aside id="ref_104" epub:type="footnote">
+            <p><strong>greatest</strong></p>
+            <p><em>Base: самый</em></p>
+        </aside>
+        
+
+        <aside id="ref_105" epub:type="footnote">
+            <p><strong>fear</strong></p>
+            <p><em>Base: страх</em></p>
+        </aside>
+        
+
+        <aside id="ref_106" epub:type="footnote">
             <p><strong>was</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
-        <aside id="ref_109" epub:type="footnote">
-            <p><strong>see</strong></p>
-            <p><em>Base: видеть</em></p>
-        </aside>
-        
-
-        <aside id="ref_110" epub:type="footnote">
+        <aside id="ref_107" epub:type="footnote">
             <p><strong>that</strong></p>
             <p><em>Base: что</em></p>
         </aside>
         
 
+        <aside id="ref_108" epub:type="footnote">
+            <p><strong>somebody</strong></p>
+            <p><em>Base: кто</em></p>
+        </aside>
+        
+
+        <aside id="ref_109" epub:type="footnote">
+            <p><strong>would</strong></p>
+            <p><em>Base: может</em></p>
+        </aside>
+        
+
+        <aside id="ref_110" epub:type="footnote">
+            <p><strong>discover</strong></p>
+            <p><em>Base: находить</em></p>
+        </aside>
+        
+
         <aside id="ref_111" epub:type="footnote">
-            <p><strong>weren’t</strong></p>
-            <p><em>Base: не</em></p>
+            <p><strong>it</strong></p>
+            <p><em>Base: его</em></p>
         </aside>
         
 
         <aside id="ref_112" epub:type="footnote">
-            <p><strong>man</strong></p>
-            <p><em>Base: мужчина</em></p>
-        </aside>
-        
-
-        <aside id="ref_113" epub:type="footnote">
-            <p><strong>be</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_114" epub:type="footnote">
-            <p><strong>he</strong></p>
+            <p><strong>They</strong></p>
             <p><em>Base: он</em></p>
         </aside>
         
 
+        <aside id="ref_113" epub:type="footnote">
+            <p><strong>didn’t</strong></p>
+            <p><em>Base: не</em></p>
+        </aside>
+        
+
+        <aside id="ref_114" epub:type="footnote">
+            <p><strong>think</strong></p>
+            <p><em>Base: думать</em></p>
+        </aside>
+        
+
         <aside id="ref_115" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>that</strong></p>
+            <p><em>Base: что</em></p>
         </aside>
         
 
         <aside id="ref_116" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>they</strong></p>
+            <p><em>Base: он</em></p>
         </aside>
         
 
         <aside id="ref_117" epub:type="footnote">
+            <p><strong>could</strong></p>
+            <p><em>Base: мочь</em></p>
+        </aside>
+        
+
+        <aside id="ref_118" epub:type="footnote">
             <p><strong>it</strong></p>
             <p><em>Base: это</em></p>
         </aside>
         
 
-        <aside id="ref_118" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
-        </aside>
-        
-
         <aside id="ref_119" epub:type="footnote">
-            <p><strong>this</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>if</strong></p>
+            <p><em>Base: если</em></p>
         </aside>
         
 
         <aside id="ref_120" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>anyone</strong></p>
+            <p><em>Base: любой</em></p>
         </aside>
         
 
         <aside id="ref_121" epub:type="footnote">
-            <p><strong>were</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>about</strong></p>
+            <p><em>Base: о</em></p>
         </aside>
         
 
         <aside id="ref_122" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>Mrs</strong></p>
+            <p><em>Base: миссис</em></p>
         </aside>
         
 
         <aside id="ref_123" epub:type="footnote">
-            <p><strong>be</strong></p>
+            <p><strong>was</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
         <aside id="ref_124" epub:type="footnote">
-            <p><strong>it</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>sister</strong></p>
+            <p><em>Base: сестра</em></p>
         </aside>
         
 
         <aside id="ref_125" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>Mrs</strong></p>
+            <p><em>Base: миссис</em></p>
         </aside>
         
 
         <aside id="ref_126" epub:type="footnote">
-            <p><strong>car</strong></p>
-            <p><em>Base: машина</em></p>
+            <p><strong>but</strong></p>
+            <p><em>Base: но</em></p>
         </aside>
         
 
         <aside id="ref_127" epub:type="footnote">
-            <p><strong>he</strong></p>
+            <p><strong>they</strong></p>
             <p><em>Base: он</em></p>
         </aside>
         
 
         <aside id="ref_128" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>hadn’t</strong></p>
+            <p><em>Base: не</em></p>
         </aside>
         
 
         <aside id="ref_129" epub:type="footnote">
+            <p><strong>for several</strong></p>
+            <p><em>Base: несколько</em></p>
+        </aside>
+        
+
+        <aside id="ref_130" epub:type="footnote">
+            <p><strong>years</strong></p>
+            <p><em>Base: год</em></p>
+        </aside>
+        
+
+        <aside id="ref_131" epub:type="footnote">
+            <p><strong>in fact</strong></p>
+            <p><em>Base: факт</em></p>
+        </aside>
+        
+
+        <aside id="ref_132" epub:type="footnote">
+            <p><strong>Mrs</strong></p>
+            <p><em>Base: миссис</em></p>
+        </aside>
+        
+
+        <aside id="ref_133" epub:type="footnote">
+            <p><strong>pretended</strong></p>
+            <p><em>Base: сделать</em></p>
+        </aside>
+        
+
+        <aside id="ref_134" epub:type="footnote">
+            <p><strong>pretended</strong></p>
+            <p><em>Base: вид</em></p>
+        </aside>
+        
+
+        <aside id="ref_135" epub:type="footnote">
+            <p><strong>that</strong></p>
+            <p><em>Base: что</em></p>
+        </aside>
+        
+
+        <aside id="ref_136" epub:type="footnote">
+            <p><strong>she didn’t have</strong></p>
+            <p><em>Base: у</em></p>
+        </aside>
+        
+
+        <aside id="ref_137" epub:type="footnote">
+            <p><strong>her</strong></p>
+            <p><em>Base: она</em></p>
+        </aside>
+        
+
+        <aside id="ref_138" epub:type="footnote">
+            <p><strong>didn’t have</strong></p>
+            <p><em>Base: нет</em></p>
+        </aside>
+        
+
+        <aside id="ref_139" epub:type="footnote">
+            <p><strong>a sister</strong></p>
+            <p><em>Base: сестра</em></p>
+        </aside>
+        
+
+        <aside id="ref_140" epub:type="footnote">
+            <p><strong>because</strong></p>
+            <p><em>Base: потому что</em></p>
+        </aside>
+        
+
+        <aside id="ref_141" epub:type="footnote">
+            <p><strong>her</strong></p>
+            <p><em>Base: ее</em></p>
+        </aside>
+        
+
+        <aside id="ref_142" epub:type="footnote">
+            <p><strong>sister</strong></p>
+            <p><em>Base: сестра</em></p>
+        </aside>
+        
+
+        <aside id="ref_143" epub:type="footnote">
+            <p><strong>and</strong></p>
+            <p><em>Base: и</em></p>
+        </aside>
+        
+
+        <aside id="ref_144" epub:type="footnote">
+            <p><strong>her</strong></p>
+            <p><em>Base: ее</em></p>
+        </aside>
+        
+
+        <aside id="ref_145" epub:type="footnote">
+            <p><strong>husband</strong></p>
+            <p><em>Base: муж</em></p>
+        </aside>
+        
+
+        <aside id="ref_146" epub:type="footnote">
+            <p><strong>were</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_147" epub:type="footnote">
+            <p><strong>as</strong></p>
+            <p><em>Base: так</em></p>
+        </aside>
+        
+
+        <aside id="ref_148" epub:type="footnote">
+            <p><strong>as</strong></p>
+            <p><em>Base: как</em></p>
+        </aside>
+        
+
+        <aside id="ref_149" epub:type="footnote">
             <p><strong>it</strong></p>
             <p><em>Base: это</em></p>
         </aside>
         
 
-        <aside id="ref_130" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_131" epub:type="footnote">
-            <p><strong>didn’t</strong></p>
-            <p><em>Base: не</em></p>
-        </aside>
-        
-
-        <aside id="ref_132" epub:type="footnote">
-            <p><strong>see</strong></p>
-            <p><em>Base: видеть</em></p>
-        </aside>
-        
-
-        <aside id="ref_133" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
-        </aside>
-        
-
-        <aside id="ref_134" epub:type="footnote">
-            <p><strong>never</strong></p>
-            <p><em>Base: не</em></p>
-        </aside>
-        
-
-        <aside id="ref_135" epub:type="footnote">
-            <p><strong>seen</strong></p>
-            <p><em>Base: видеть</em></p>
-        </aside>
-        
-
-        <aside id="ref_136" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_137" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_138" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
-        </aside>
-        
-
-        <aside id="ref_139" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_140" epub:type="footnote">
+        <aside id="ref_150" epub:type="footnote">
             <p><strong>was</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
-        <aside id="ref_141" epub:type="footnote">
-            <p><strong>very</strong></p>
-            <p><em>Base: очень</em></p>
-        </aside>
-        
-
-        <aside id="ref_142" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_143" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_144" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
-        </aside>
-        
-
-        <aside id="ref_145" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_146" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_147" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_148" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_149" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_150" epub:type="footnote">
-            <p><strong>didn’t</strong></p>
-            <p><em>Base: не</em></p>
-        </aside>
-        
-
         <aside id="ref_151" epub:type="footnote">
-            <p><strong>This</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>possible</strong></p>
+            <p><em>Base: возможно</em></p>
         </aside>
         
 
         <aside id="ref_152" epub:type="footnote">
-            <p><strong>were</strong></p>
+            <p><strong>to be</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
         <aside id="ref_153" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>The</strong></p>
+            <p><em>Base: у</em></p>
         </aside>
         
 
         <aside id="ref_154" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>that</strong></p>
+            <p><em>Base: что</em></p>
         </aside>
         
 
         <aside id="ref_155" epub:type="footnote">
-            <p><strong>see</strong></p>
-            <p><em>Base: видеть</em></p>
+            <p><strong>had</strong></p>
+            <p><em>Base: иметь</em></p>
         </aside>
         
 
         <aside id="ref_156" epub:type="footnote">
-            <p><strong>It</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>a small</strong></p>
+            <p><em>Base: небольшой</em></p>
         </aside>
         
 
         <aside id="ref_157" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_158" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
-        </aside>
-        
-
-        <aside id="ref_159" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_160" epub:type="footnote">
-            <p><strong>what</strong></p>
-            <p><em>Base: что</em></p>
-        </aside>
-        
-
-        <aside id="ref_161" epub:type="footnote">
-            <p><strong>were</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_162" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: это</em></p>
-        </aside>
-        
-
-        <aside id="ref_163" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: это</em></p>
-        </aside>
-        
-
-        <aside id="ref_164" epub:type="footnote">
-            <p><strong>what</strong></p>
-            <p><em>Base: что</em></p>
-        </aside>
-        
-
-        <aside id="ref_165" epub:type="footnote">
-            <p><strong>I</strong></p>
-            <p><em>Base: я</em></p>
-        </aside>
-        
-
-        <aside id="ref_166" epub:type="footnote">
             <p><strong>son</strong></p>
             <p><em>Base: сын</em></p>
         </aside>
         
 
-        <aside id="ref_167" epub:type="footnote">
-            <p><strong>He</strong></p>
+        <aside id="ref_158" epub:type="footnote">
+            <p><strong>too</strong></p>
+            <p><em>Base: тоже</em></p>
+        </aside>
+        
+
+        <aside id="ref_159" epub:type="footnote">
+            <p><strong>but</strong></p>
+            <p><em>Base: но</em></p>
+        </aside>
+        
+
+        <aside id="ref_160" epub:type="footnote">
+            <p><strong>they</strong></p>
             <p><em>Base: он</em></p>
         </aside>
         
 
-        <aside id="ref_168" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+        <aside id="ref_161" epub:type="footnote">
+            <p><strong>him</strong></p>
+            <p><em>Base: его</em></p>
         </aside>
         
 
-        <aside id="ref_169" epub:type="footnote">
-            <p><strong>it</strong></p>
-            <p><em>Base: это</em></p>
+        <aside id="ref_162" epub:type="footnote">
+            <p><strong>never</strong></p>
+            <p><em>Base: никогда не</em></p>
         </aside>
         
 
-        <aside id="ref_170" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
+        <aside id="ref_163" epub:type="footnote">
+            <p><strong>even</strong></p>
+            <p><em>Base: даже</em></p>
         </aside>
         
 
-        <aside id="ref_171" epub:type="footnote">
+        <aside id="ref_164" epub:type="footnote">
             <p><strong>not</strong></p>
             <p><em>Base: не</em></p>
         </aside>
         
 
-        <aside id="ref_172" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
-        </aside>
-        
-
-        <aside id="ref_173" epub:type="footnote">
-            <p><strong>home</strong></p>
-            <p><em>Base: дом</em></p>
-        </aside>
-        
-
-        <aside id="ref_174" epub:type="footnote">
-            <p><strong>number</strong></p>
-            <p><em>Base: номер</em></p>
-        </aside>
-        
-
-        <aside id="ref_175" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_176" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_177" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
-        </aside>
-        
-
-        <aside id="ref_178" epub:type="footnote">
-            <p><strong>no</strong></p>
-            <p><em>Base: не</em></p>
-        </aside>
-        
-
-        <aside id="ref_179" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_180" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_181" epub:type="footnote">
-            <p><strong>wasn’t</strong></p>
-            <p><em>Base: не</em></p>
-        </aside>
-        
-
-        <aside id="ref_182" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_183" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_184" epub:type="footnote">
-            <p><strong>were</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_185" epub:type="footnote">
-            <p><strong>son</strong></p>
-            <p><em>Base: сын</em></p>
-        </aside>
-        
-
-        <aside id="ref_186" epub:type="footnote">
-            <p><strong>it</strong></p>
-            <p><em>Base: это</em></p>
-        </aside>
-        
-
-        <aside id="ref_187" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_188" epub:type="footnote">
-            <p><strong>wasn’t</strong></p>
-            <p><em>Base: не</em></p>
-        </aside>
-        
-
-        <aside id="ref_189" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_190" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_191" epub:type="footnote">
-            <p><strong>never</strong></p>
-            <p><em>Base: не</em></p>
-        </aside>
-        
-
-        <aside id="ref_192" epub:type="footnote">
+        <aside id="ref_165" epub:type="footnote">
             <p><strong>seen</strong></p>
             <p><em>Base: видеть</em></p>
         </aside>
         
 
-        <aside id="ref_193" epub:type="footnote">
-            <p><strong>It</strong></p>
+        <aside id="ref_166" epub:type="footnote">
+            <p><strong>This</strong></p>
             <p><em>Base: это</em></p>
         </aside>
         
 
-        <aside id="ref_194" epub:type="footnote">
-            <p><strong>been</strong></p>
+        <aside id="ref_167" epub:type="footnote">
+            <p><strong>boy</strong></p>
+            <p><em>Base: мальчик</em></p>
+        </aside>
+        
+
+        <aside id="ref_168" epub:type="footnote">
+            <p><strong>was</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
+        <aside id="ref_169" epub:type="footnote">
+            <p><strong>another</strong></p>
+            <p><em>Base: другой</em></p>
+        </aside>
+        
+
+        <aside id="ref_170" epub:type="footnote">
+            <p><strong>good</strong></p>
+            <p><em>Base: хорошее</em></p>
+        </aside>
+        
+
+        <aside id="ref_171" epub:type="footnote">
+            <p><strong>reason</strong></p>
+            <p><em>Base: причиной</em></p>
+        </aside>
+        
+
+        <aside id="ref_172" epub:type="footnote">
+            <p><strong>for</strong></p>
+            <p><em>Base: для</em></p>
+        </aside>
+        
+
+        <aside id="ref_173" epub:type="footnote">
+            <p><strong>keeping</strong></p>
+            <p><em>Base: то</em></p>
+        </aside>
+        
+
+        <aside id="ref_174" epub:type="footnote">
+            <p><strong>keeping</strong></p>
+            <p><em>Base: что</em></p>
+        </aside>
+        
+
+        <aside id="ref_175" epub:type="footnote">
+            <p><strong>keeping</strong></p>
+            <p><em>Base: держать</em></p>
+        </aside>
+        
+
+        <aside id="ref_176" epub:type="footnote">
+            <p><strong>away</strong></p>
+            <p><em>Base: далеко</em></p>
+        </aside>
+        
+
+        <aside id="ref_177" epub:type="footnote">
+            <p><strong>they</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_178" epub:type="footnote">
+            <p><strong>didn’t</strong></p>
+            <p><em>Base: не</em></p>
+        </aside>
+        
+
+        <aside id="ref_179" epub:type="footnote">
+            <p><strong>want</strong></p>
+            <p><em>Base: хотеть</em></p>
+        </aside>
+        
+
+        <aside id="ref_180" epub:type="footnote">
+            <p><strong>mixing</strong></p>
+            <p><em>Base: общаться</em></p>
+        </aside>
+        
+
+        <aside id="ref_181" epub:type="footnote">
+            <p><strong>with</strong></p>
+            <p><em>Base: со</em></p>
+        </aside>
+        
+
+        <aside id="ref_182" epub:type="footnote">
+            <p><strong>a child</strong></p>
+            <p><em>Base: ребенок</em></p>
+        </aside>
+        
+
+        <aside id="ref_183" epub:type="footnote">
+            <p><strong>like</strong></p>
+            <p><em>Base: как</em></p>
+        </aside>
+        
+
+        <aside id="ref_184" epub:type="footnote">
+            <p><strong>that</strong></p>
+            <p><em>Base: это</em></p>
+        </aside>
+        
+
+        <aside id="ref_185" epub:type="footnote">
+            <p><strong>When</strong></p>
+            <p><em>Base: когда</em></p>
+        </aside>
+        
+
+        <aside id="ref_186" epub:type="footnote">
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
+        </aside>
+        
+
+        <aside id="ref_187" epub:type="footnote">
+            <p><strong>and</strong></p>
+            <p><em>Base: и</em></p>
+        </aside>
+        
+
+        <aside id="ref_188" epub:type="footnote">
+            <p><strong>Mrs</strong></p>
+            <p><em>Base: миссис</em></p>
+        </aside>
+        
+
+        <aside id="ref_189" epub:type="footnote">
+            <p><strong>woke up</strong></p>
+            <p><em>Base: проснуться</em></p>
+        </aside>
+        
+
+        <aside id="ref_190" epub:type="footnote">
+            <p><strong>on</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_191" epub:type="footnote">
+            <p><strong>the</strong></p>
+            <p><em>Base: то</em></p>
+        </aside>
+        
+
+        <aside id="ref_192" epub:type="footnote">
+            <p><strong>grey</strong></p>
+            <p><em>Base: серый</em></p>
+        </aside>
+        
+
+        <aside id="ref_193" epub:type="footnote">
+            <p><strong>our</strong></p>
+            <p><em>Base: наш</em></p>
+        </aside>
+        
+
+        <aside id="ref_194" epub:type="footnote">
+            <p><strong>story</strong></p>
+            <p><em>Base: история</em></p>
+        </aside>
+        
+
         <aside id="ref_195" epub:type="footnote">
-            <p><strong>Or</strong></p>
-            <p><em>Base: или</em></p>
+            <p><strong>there</strong></p>
+            <p><em>Base: там</em></p>
         </aside>
         
 
@@ -1231,647 +1231,2004 @@
         
 
         <aside id="ref_197" epub:type="footnote">
-            <p><strong>no</strong></p>
-            <p><em>Base: не</em></p>
+            <p><strong>nothing</strong></p>
+            <p><em>Base: ничего</em></p>
         </aside>
         
 
         <aside id="ref_198" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>about</strong></p>
+            <p><em>Base: о</em></p>
         </aside>
         
 
         <aside id="ref_199" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>sky</strong></p>
+            <p><em>Base: небо</em></p>
         </aside>
         
 
         <aside id="ref_200" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>outside</strong></p>
+            <p><em>Base: снаружи</em></p>
         </aside>
         
 
         <aside id="ref_201" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>that</strong></p>
+            <p><em>Base: что</em></p>
         </aside>
         
 
         <aside id="ref_202" epub:type="footnote">
-            <p><strong>it</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>and</strong></p>
+            <p><em>Base: и</em></p>
         </aside>
         
 
         <aside id="ref_203" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>things</strong></p>
+            <p><em>Base: вещь</em></p>
         </aside>
         
 
         <aside id="ref_204" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>would soon</strong></p>
+            <p><em>Base: скоро</em></p>
         </aside>
         
 
         <aside id="ref_205" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>all over</strong></p>
+            <p><em>Base: по</em></p>
         </aside>
         
 
         <aside id="ref_206" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>all over</strong></p>
+            <p><em>Base: весь</em></p>
         </aside>
         
 
         <aside id="ref_207" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
+            <p><strong>country</strong></p>
+            <p><em>Base: страна</em></p>
         </aside>
         
 
         <aside id="ref_208" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
         </aside>
         
 
         <aside id="ref_209" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>as</strong></p>
+            <p><em>Base: как</em></p>
         </aside>
         
 
         <aside id="ref_210" epub:type="footnote">
-            <p><strong>man</strong></p>
-            <p><em>Base: мужчина</em></p>
+            <p><strong>he</strong></p>
+            <p><em>Base: он</em></p>
         </aside>
         
 
         <aside id="ref_211" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>picked out</strong></p>
+            <p><em>Base: взял</em></p>
         </aside>
         
 
         <aside id="ref_212" epub:type="footnote">
-            <p><strong>It</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>his</strong></p>
+            <p><em>Base: его</em></p>
         </aside>
         
 
         <aside id="ref_213" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>most</strong></p>
+            <p><em>Base: самый</em></p>
         </aside>
         
 
         <aside id="ref_214" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
+            <p><strong>for</strong></p>
+            <p><em>Base: для</em></p>
         </aside>
         
 
         <aside id="ref_215" epub:type="footnote">
-            <p><strong>man</strong></p>
-            <p><em>Base: мужчина</em></p>
+            <p><strong>work</strong></p>
+            <p><em>Base: работа</em></p>
         </aside>
         
 
         <aside id="ref_216" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>and</strong></p>
+            <p><em>Base: и</em></p>
         </aside>
         
 
         <aside id="ref_217" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>Mrs</strong></p>
+            <p><em>Base: миссис</em></p>
         </aside>
         
 
         <aside id="ref_218" epub:type="footnote">
-            <p><strong>didn’t</strong></p>
-            <p><em>Base: не</em></p>
+            <p><strong>as</strong></p>
+            <p><em>Base: как</em></p>
         </aside>
         
 
         <aside id="ref_219" epub:type="footnote">
-            <p><strong>being</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>she</strong></p>
+            <p><em>Base: она</em></p>
         </aside>
         
 
         <aside id="ref_220" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>wrestled</strong></p>
+            <p><em>Base: бороться</em></p>
         </aside>
         
 
         <aside id="ref_221" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+            <p><strong>with</strong></p>
+            <p><em>Base: со</em></p>
         </aside>
         
 
         <aside id="ref_222" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
+            <p><strong>into</strong></p>
+            <p><em>Base: в</em></p>
         </aside>
         
 
         <aside id="ref_223" epub:type="footnote">
-            <p><strong>be</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>his</strong></p>
+            <p><em>Base: его</em></p>
         </aside>
         
 
         <aside id="ref_224" epub:type="footnote">
-            <p><strong>nothing</strong></p>
-            <p><em>Base: никто</em></p>
+            <p><strong>high</strong></p>
+            <p><em>Base: высокий</em></p>
         </aside>
         
 
         <aside id="ref_225" epub:type="footnote">
-            <p><strong>me</strong></p>
-            <p><em>Base: мне</em></p>
+            <p><strong>None</strong></p>
+            <p><em>Base: ни</em></p>
         </aside>
         
 
         <aside id="ref_226" epub:type="footnote">
-            <p><strong>be</strong></p>
-            <p><em>Base: быть</em></p>
+            <p><strong>of</strong></p>
+            <p><em>Base: из</em></p>
         </aside>
         
 
         <aside id="ref_227" epub:type="footnote">
-            <p><strong>this</strong></p>
-            <p><em>Base: это</em></p>
+            <p><strong>them</strong></p>
+            <p><em>Base: их</em></p>
         </aside>
         
 
         <aside id="ref_228" epub:type="footnote">
-            <p><strong>And</strong></p>
-            <p><em>Base: и</em></p>
+            <p><strong>not</strong></p>
+            <p><em>Base: не</em></p>
         </aside>
         
 
         <aside id="ref_229" epub:type="footnote">
-            <p><strong>man</strong></p>
-            <p><em>Base: мужчина</em></p>
+            <p><strong>noticed</strong></p>
+            <p><em>Base: заметить</em></p>
         </aside>
         
 
         <aside id="ref_230" epub:type="footnote">
+            <p><strong>a large</strong></p>
+            <p><em>Base: большой</em></p>
+        </aside>
+        
+
+        <aside id="ref_231" epub:type="footnote">
+            <p><strong>flutter past</strong></p>
+            <p><em>Base: летать</em></p>
+        </aside>
+        
+
+        <aside id="ref_232" epub:type="footnote">
+            <p><strong>past</strong></p>
+            <p><em>Base: мимо</em></p>
+        </aside>
+        
+
+        <aside id="ref_233" epub:type="footnote">
+            <p><strong>the window</strong></p>
+            <p><em>Base: окно</em></p>
+        </aside>
+        
+
+        <aside id="ref_234" epub:type="footnote">
+            <p><strong>At</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_235" epub:type="footnote">
+            <p><strong>half</strong></p>
+            <p><em>Base: половина</em></p>
+        </aside>
+        
+
+        <aside id="ref_236" epub:type="footnote">
+            <p><strong>past eight</strong></p>
+            <p><em>Base: девять</em></p>
+        </aside>
+        
+
+        <aside id="ref_237" epub:type="footnote">
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
+        </aside>
+        
+
+        <aside id="ref_238" epub:type="footnote">
+            <p><strong>picked up</strong></p>
+            <p><em>Base: взял</em></p>
+        </aside>
+        
+
+        <aside id="ref_239" epub:type="footnote">
+            <p><strong>his</strong></p>
+            <p><em>Base: его</em></p>
+        </aside>
+        
+
+        <aside id="ref_240" epub:type="footnote">
+            <p><strong>briefcase</strong></p>
+            <p><em>Base: портфель</em></p>
+        </aside>
+        
+
+        <aside id="ref_241" epub:type="footnote">
+            <p><strong>pecked</strong></p>
+            <p><em>Base: поцеловать</em></p>
+        </aside>
+        
+
+        <aside id="ref_242" epub:type="footnote">
+            <p><strong>Mrs</strong></p>
+            <p><em>Base: миссис</em></p>
+        </aside>
+        
+
+        <aside id="ref_243" epub:type="footnote">
+            <p><strong>on</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_244" epub:type="footnote">
+            <p><strong>the cheek</strong></p>
+            <p><em>Base: щека</em></p>
+        </aside>
+        
+
+        <aside id="ref_245" epub:type="footnote">
             <p><strong>and</strong></p>
             <p><em>Base: и</em></p>
         </aside>
         
 
-        <aside id="ref_231" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
+        <aside id="ref_246" epub:type="footnote">
+            <p><strong>tried</strong></p>
+            <p><em>Base: пытаться</em></p>
         </aside>
         
 
-        <aside id="ref_232" epub:type="footnote">
-            <p><strong>been</strong></p>
-            <p><em>Base: быть</em></p>
+        <aside id="ref_247" epub:type="footnote">
+            <p><strong>to kiss</strong></p>
+            <p><em>Base: поцеловать</em></p>
         </aside>
         
 
-        <aside id="ref_233" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
+        <aside id="ref_248" epub:type="footnote">
+            <p><strong>but</strong></p>
+            <p><em>Base: но</em></p>
         </aside>
         
 
-        <aside id="ref_234" epub:type="footnote">
+        <aside id="ref_249" epub:type="footnote">
+            <p><strong>because</strong></p>
+            <p><em>Base: потому что</em></p>
+        </aside>
+        
+
+        <aside id="ref_250" epub:type="footnote">
+            <p><strong>now</strong></p>
+            <p><em>Base: сейчас</em></p>
+        </aside>
+        
+
+        <aside id="ref_251" epub:type="footnote">
+            <p><strong>having</strong></p>
+            <p><em>Base: иметь</em></p>
+        </aside>
+        
+
+        <aside id="ref_252" epub:type="footnote">
+            <p><strong>and</strong></p>
+            <p><em>Base: и</em></p>
+        </aside>
+        
+
+        <aside id="ref_253" epub:type="footnote">
+            <p><strong>throwing</strong></p>
+            <p><em>Base: бросать</em></p>
+        </aside>
+        
+
+        <aside id="ref_254" epub:type="footnote">
+            <p><strong>his</strong></p>
+            <p><em>Base: его</em></p>
+        </aside>
+        
+
+        <aside id="ref_255" epub:type="footnote">
+            <p><strong>at</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_256" epub:type="footnote">
+            <p><strong>the walls</strong></p>
+            <p><em>Base: стена</em></p>
+        </aside>
+        
+
+        <aside id="ref_257" epub:type="footnote">
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
+        </aside>
+        
+
+        <aside id="ref_258" epub:type="footnote">
+            <p><strong>as</strong></p>
+            <p><em>Base: как</em></p>
+        </aside>
+        
+
+        <aside id="ref_259" epub:type="footnote">
             <p><strong>he</strong></p>
             <p><em>Base: он</em></p>
         </aside>
         
 
-        <aside id="ref_235" epub:type="footnote">
-            <p><strong>been</strong></p>
-            <p><em>Base: быть</em></p>
+        <aside id="ref_260" epub:type="footnote">
+            <p><strong>left</strong></p>
+            <p><em>Base: оставить</em></p>
         </aside>
         
 
-        <aside id="ref_236" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: это</em></p>
+        <aside id="ref_261" epub:type="footnote">
+            <p><strong>the house</strong></p>
+            <p><em>Base: дом</em></p>
         </aside>
         
 
-        <aside id="ref_237" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_238" epub:type="footnote">
+        <aside id="ref_262" epub:type="footnote">
             <p><strong>He</strong></p>
             <p><em>Base: он</em></p>
         </aside>
         
 
-        <aside id="ref_239" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
+        <aside id="ref_263" epub:type="footnote">
+            <p><strong>got</strong></p>
+            <p><em>Base: сидеть</em></p>
         </aside>
         
 
-        <aside id="ref_240" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
+        <aside id="ref_264" epub:type="footnote">
+            <p><strong>into</strong></p>
+            <p><em>Base: в</em></p>
         </aside>
         
 
-        <aside id="ref_241" epub:type="footnote">
+        <aside id="ref_265" epub:type="footnote">
+            <p><strong>his</strong></p>
+            <p><em>Base: его</em></p>
+        </aside>
+        
+
+        <aside id="ref_266" epub:type="footnote">
             <p><strong>car</strong></p>
             <p><em>Base: машина</em></p>
         </aside>
         
 
-        <aside id="ref_242" epub:type="footnote">
+        <aside id="ref_267" epub:type="footnote">
             <p><strong>and</strong></p>
             <p><em>Base: и</em></p>
         </aside>
         
 
-        <aside id="ref_243" epub:type="footnote">
-            <p><strong>home</strong></p>
-            <p><em>Base: дом</em></p>
+        <aside id="ref_268" epub:type="footnote">
+            <p><strong>backed out</strong></p>
+            <p><em>Base: вызов</em></p>
         </aside>
         
 
-        <aside id="ref_244" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+        <aside id="ref_269" epub:type="footnote">
+            <p><strong>of</strong></p>
+            <p><em>Base: из</em></p>
         </aside>
         
 
-        <aside id="ref_245" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_246" epub:type="footnote">
-            <p><strong>which</strong></p>
-            <p><em>Base: что</em></p>
-        </aside>
-        
-
-        <aside id="ref_247" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_248" epub:type="footnote">
-            <p><strong>never</strong></p>
-            <p><em>Base: не</em></p>
-        </aside>
-        
-
-        <aside id="ref_249" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_250" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_251" epub:type="footnote">
+        <aside id="ref_270" epub:type="footnote">
             <p><strong>number</strong></p>
             <p><em>Base: номер</em></p>
         </aside>
         
 
-        <aside id="ref_252" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
+        <aside id="ref_271" epub:type="footnote">
+            <p><strong>four’s</strong></p>
+            <p><em>Base: четыре</em></p>
         </aside>
         
 
-        <aside id="ref_253" epub:type="footnote">
-            <p><strong>saw</strong></p>
-            <p><em>Base: видеть</em></p>
-        </aside>
-        
-
-        <aside id="ref_254" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
-        </aside>
-        
-
-        <aside id="ref_255" epub:type="footnote">
-            <p><strong>it</strong></p>
-            <p><em>Base: это</em></p>
-        </aside>
-        
-
-        <aside id="ref_256" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_257" epub:type="footnote">
-            <p><strong>he</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_258" epub:type="footnote">
+        <aside id="ref_272" epub:type="footnote">
             <p><strong>It</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_259" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_260" epub:type="footnote">
-            <p><strong>He</strong></p>
-            <p><em>Base: он</em></p>
-        </aside>
-        
-
-        <aside id="ref_261" epub:type="footnote">
-            <p><strong>was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_262" epub:type="footnote">
-            <p><strong>it</strong></p>
             <p><em>Base: это</em></p>
         </aside>
         
 
-        <aside id="ref_263" epub:type="footnote">
+        <aside id="ref_273" epub:type="footnote">
             <p><strong>was</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
-        <aside id="ref_264" epub:type="footnote">
-            <p><strong>it</strong></p>
+        <aside id="ref_274" epub:type="footnote">
+            <p><strong>on</strong></p>
+            <p><em>Base: на</em></p>
+        </aside>
+        
+
+        <aside id="ref_275" epub:type="footnote">
+            <p><strong>the corner</strong></p>
+            <p><em>Base: угол</em></p>
+        </aside>
+        
+
+        <aside id="ref_276" epub:type="footnote">
+            <p><strong>of the street</strong></p>
+            <p><em>Base: улица</em></p>
+        </aside>
+        
+
+        <aside id="ref_277" epub:type="footnote">
+            <p><strong>that</strong></p>
+            <p><em>Base: что</em></p>
+        </aside>
+        
+
+        <aside id="ref_278" epub:type="footnote">
+            <p><strong>he</strong></p>
             <p><em>Base: он</em></p>
         </aside>
         
 
-        <aside id="ref_265" epub:type="footnote">
+        <aside id="ref_279" epub:type="footnote">
+            <p><strong>noticed</strong></p>
+            <p><em>Base: заметить</em></p>
+        </aside>
+        
+
+        <aside id="ref_280" epub:type="footnote">
+            <p><strong>the first</strong></p>
+            <p><em>Base: первый</em></p>
+        </aside>
+        
+
+        <aside id="ref_281" epub:type="footnote">
+            <p><strong>sign</strong></p>
+            <p><em>Base: знак</em></p>
+        </aside>
+        
+
+        <aside id="ref_282" epub:type="footnote">
+            <p><strong>of something</strong></p>
+            <p><em>Base: что</em></p>
+        </aside>
+        
+
+        <aside id="ref_283" epub:type="footnote">
+            <p><strong>a cat</strong></p>
+            <p><em>Base: кошка</em></p>
+        </aside>
+        
+
+        <aside id="ref_284" epub:type="footnote">
+            <p><strong>reading</strong></p>
+            <p><em>Base: читать</em></p>
+        </aside>
+        
+
+        <aside id="ref_285" epub:type="footnote">
+            <p><strong>a map</strong></p>
+            <p><em>Base: карта</em></p>
+        </aside>
+        
+
+        <aside id="ref_286" epub:type="footnote">
+            <p><strong>For</strong></p>
+            <p><em>Base: на</em></p>
+        </aside>
+        
+
+        <aside id="ref_287" epub:type="footnote">
+            <p><strong>a second</strong></p>
+            <p><em>Base: секунда</em></p>
+        </aside>
+        
+
+        <aside id="ref_288" epub:type="footnote">
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
+        </aside>
+        
+
+        <aside id="ref_289" epub:type="footnote">
             <p><strong>didn’t</strong></p>
             <p><em>Base: не</em></p>
         </aside>
         
 
-        <aside id="ref_266" epub:type="footnote">
-            <p><strong>It</strong></p>
-            <p><em>Base: он</em></p>
+        <aside id="ref_290" epub:type="footnote">
+            <p><strong>what</strong></p>
+            <p><em>Base: что</em></p>
         </aside>
         
 
-        <aside id="ref_267" epub:type="footnote">
-            <p><strong>Was</strong></p>
-            <p><em>Base: быть</em></p>
-        </aside>
-        
-
-        <aside id="ref_268" epub:type="footnote">
-            <p><strong>this</strong></p>
-            <p><em>Base: это</em></p>
-        </aside>
-        
-
-        <aside id="ref_269" epub:type="footnote">
+        <aside id="ref_291" epub:type="footnote">
             <p><strong>he</strong></p>
             <p><em>Base: он</em></p>
         </aside>
         
 
-        <aside id="ref_270" epub:type="footnote">
-            <p><strong>house</strong></p>
-            <p><em>Base: дом</em></p>
+        <aside id="ref_292" epub:type="footnote">
+            <p><strong>had seen</strong></p>
+            <p><em>Base: видеть</em></p>
         </aside>
         
 
-        <aside id="ref_271" epub:type="footnote">
-            <p><strong>He</strong></p>
+        <aside id="ref_293" epub:type="footnote">
+            <p><strong>then</strong></p>
+            <p><em>Base: затем</em></p>
+        </aside>
+        
+
+        <aside id="ref_294" epub:type="footnote">
+            <p><strong>he</strong></p>
             <p><em>Base: он</em></p>
         </aside>
         
 
-        <aside id="ref_272" epub:type="footnote">
+        <aside id="ref_295" epub:type="footnote">
+            <p><strong>jerked</strong></p>
+            <p><em>Base: поворот</em></p>
+        </aside>
+        
+
+        <aside id="ref_296" epub:type="footnote">
+            <p><strong>his</strong></p>
+            <p><em>Base: его</em></p>
+        </aside>
+        
+
+        <aside id="ref_297" epub:type="footnote">
+            <p><strong>head</strong></p>
+            <p><em>Base: голос</em></p>
+        </aside>
+        
+
+        <aside id="ref_298" epub:type="footnote">
+            <p><strong>around</strong></p>
+            <p><em>Base: круглый</em></p>
+        </aside>
+        
+
+        <aside id="ref_299" epub:type="footnote">
+            <p><strong>to look</strong></p>
+            <p><em>Base: посмотреть</em></p>
+        </aside>
+        
+
+        <aside id="ref_300" epub:type="footnote">
+            <p><strong>again</strong></p>
+            <p><em>Base: снова</em></p>
+        </aside>
+        
+
+        <aside id="ref_301" epub:type="footnote">
+            <p><strong>There</strong></p>
+            <p><em>Base: там</em></p>
+        </aside>
+        
+
+        <aside id="ref_302" epub:type="footnote">
             <p><strong>was</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
-        <aside id="ref_273" epub:type="footnote">
-            <p><strong>not</strong></p>
+        <aside id="ref_303" epub:type="footnote">
+            <p><strong>a cat</strong></p>
+            <p><em>Base: кошка</em></p>
+        </aside>
+        
+
+        <aside id="ref_304" epub:type="footnote">
+            <p><strong>standing</strong></p>
+            <p><em>Base: стоять</em></p>
+        </aside>
+        
+
+        <aside id="ref_305" epub:type="footnote">
+            <p><strong>on</strong></p>
+            <p><em>Base: на</em></p>
+        </aside>
+        
+
+        <aside id="ref_306" epub:type="footnote">
+            <p><strong>the corner</strong></p>
+            <p><em>Base: угол</em></p>
+        </aside>
+        
+
+        <aside id="ref_307" epub:type="footnote">
+            <p><strong>but</strong></p>
+            <p><em>Base: но</em></p>
+        </aside>
+        
+
+        <aside id="ref_308" epub:type="footnote">
+            <p><strong>there</strong></p>
+            <p><em>Base: там</em></p>
+        </aside>
+        
+
+        <aside id="ref_309" epub:type="footnote">
+            <p><strong>wasn’t</strong></p>
             <p><em>Base: не</em></p>
         </aside>
         
 
-        <aside id="ref_274" epub:type="footnote">
-            <p><strong>and</strong></p>
-            <p><em>Base: и</em></p>
-        </aside>
-        
-
-        <aside id="ref_275" epub:type="footnote">
-            <p><strong>been</strong></p>
+        <aside id="ref_310" epub:type="footnote">
+            <p><strong>wasn’t</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
-        <aside id="ref_276" epub:type="footnote">
+        <aside id="ref_311" epub:type="footnote">
+            <p><strong>a map</strong></p>
+            <p><em>Base: карта</em></p>
+        </aside>
+        
+
+        <aside id="ref_312" epub:type="footnote">
+            <p><strong>in</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_313" epub:type="footnote">
+            <p><strong>sight</strong></p>
+            <p><em>Base: вид</em></p>
+        </aside>
+        
+
+        <aside id="ref_314" epub:type="footnote">
+            <p><strong>Of</strong></p>
+            <p><em>Base: о</em></p>
+        </aside>
+        
+
+        <aside id="ref_315" epub:type="footnote">
+            <p><strong>what</strong></p>
+            <p><em>Base: чем</em></p>
+        </aside>
+        
+
+        <aside id="ref_316" epub:type="footnote">
             <p><strong>he</strong></p>
             <p><em>Base: он</em></p>
         </aside>
         
 
-        <aside id="ref_277" epub:type="footnote">
-            <p><strong>And</strong></p>
-            <p><em>Base: и</em></p>
+        <aside id="ref_317" epub:type="footnote">
+            <p><strong>could have been</strong></p>
+            <p><em>Base: мог</em></p>
         </aside>
         
 
-        <aside id="ref_278" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
+        <aside id="ref_318" epub:type="footnote">
+            <p><strong>thinking</strong></p>
+            <p><em>Base: думать</em></p>
         </aside>
         
 
-        <aside id="ref_279" epub:type="footnote">
-            <p><strong>been</strong></p>
+        <aside id="ref_319" epub:type="footnote">
+            <p><strong>It</strong></p>
+            <p><em>Base: это</em></p>
+        </aside>
+        
+
+        <aside id="ref_320" epub:type="footnote">
+            <p><strong>must</strong></p>
+            <p><em>Base: должны</em></p>
+        </aside>
+        
+
+        <aside id="ref_321" epub:type="footnote">
+            <p><strong>have been</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
-        <aside id="ref_280" epub:type="footnote">
-            <p><strong>very</strong></p>
-            <p><em>Base: очень</em></p>
+        <aside id="ref_322" epub:type="footnote">
+            <p><strong>of the light</strong></p>
+            <p><em>Base: свет</em></p>
         </aside>
         
 
-        <aside id="ref_281" epub:type="footnote">
+        <aside id="ref_323" epub:type="footnote">
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
+        </aside>
+        
+
+        <aside id="ref_324" epub:type="footnote">
+            <p><strong>blinked</strong></p>
+            <p><em>Base: моргать</em></p>
+        </aside>
+        
+
+        <aside id="ref_325" epub:type="footnote">
             <p><strong>and</strong></p>
             <p><em>Base: и</em></p>
         </aside>
         
 
-        <aside id="ref_282" epub:type="footnote">
-            <p><strong>seen</strong></p>
-            <p><em>Base: видеть</em></p>
+        <aside id="ref_326" epub:type="footnote">
+            <p><strong>stared</strong></p>
+            <p><em>Base: посмотреть</em></p>
         </aside>
         
 
-        <aside id="ref_283" epub:type="footnote">
-            <p><strong>been</strong></p>
-            <p><em>Base: быть</em></p>
+        <aside id="ref_327" epub:type="footnote">
+            <p><strong>on</strong></p>
+            <p><em>Base: на</em></p>
         </aside>
         
 
-        <aside id="ref_284" epub:type="footnote">
-            <p><strong>And</strong></p>
+        <aside id="ref_328" epub:type="footnote">
+            <p><strong>the cat</strong></p>
+            <p><em>Base: кошка</em></p>
+        </aside>
+        
+
+        <aside id="ref_329" epub:type="footnote">
+            <p><strong>It</strong></p>
+            <p><em>Base: она</em></p>
+        </aside>
+        
+
+        <aside id="ref_330" epub:type="footnote">
+            <p><strong>stared</strong></p>
+            <p><em>Base: смотреть</em></p>
+        </aside>
+        
+
+        <aside id="ref_331" epub:type="footnote">
+            <p><strong>back</strong></p>
+            <p><em>Base: назад</em></p>
+        </aside>
+        
+
+        <aside id="ref_332" epub:type="footnote">
+            <p><strong>As</strong></p>
+            <p><em>Base: как</em></p>
+        </aside>
+        
+
+        <aside id="ref_333" epub:type="footnote">
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
+        </aside>
+        
+
+        <aside id="ref_334" epub:type="footnote">
+            <p><strong>drove</strong></p>
+            <p><em>Base: привод</em></p>
+        </aside>
+        
+
+        <aside id="ref_335" epub:type="footnote">
+            <p><strong>around</strong></p>
+            <p><em>Base: круглый</em></p>
+        </aside>
+        
+
+        <aside id="ref_336" epub:type="footnote">
+            <p><strong>the corner</strong></p>
+            <p><em>Base: угол</em></p>
+        </aside>
+        
+
+        <aside id="ref_337" epub:type="footnote">
+            <p><strong>and</strong></p>
             <p><em>Base: и</em></p>
         </aside>
         
 
-        <aside id="ref_285" epub:type="footnote">
-            <p><strong>be</strong></p>
-            <p><em>Base: быть</em></p>
+        <aside id="ref_338" epub:type="footnote">
+            <p><strong>up</strong></p>
+            <p><em>Base: вверх</em></p>
         </aside>
         
 
-        <aside id="ref_286" epub:type="footnote">
-            <p><strong>I</strong></p>
-            <p><em>Base: я</em></p>
+        <aside id="ref_339" epub:type="footnote">
+            <p><strong>the</strong></p>
+            <p><em>Base: по</em></p>
         </aside>
         
 
-        <aside id="ref_287" epub:type="footnote">
-            <p><strong>don’t</strong></p>
+        <aside id="ref_340" epub:type="footnote">
+            <p><strong>road</strong></p>
+            <p><em>Base: дорога</em></p>
+        </aside>
+        
+
+        <aside id="ref_341" epub:type="footnote">
+            <p><strong>he</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_342" epub:type="footnote">
+            <p><strong>watched</strong></p>
+            <p><em>Base: смотреть</em></p>
+        </aside>
+        
+
+        <aside id="ref_343" epub:type="footnote">
+            <p><strong>the</strong></p>
+            <p><em>Base: на</em></p>
+        </aside>
+        
+
+        <aside id="ref_344" epub:type="footnote">
+            <p><strong>cat</strong></p>
+            <p><em>Base: кошка</em></p>
+        </aside>
+        
+
+        <aside id="ref_345" epub:type="footnote">
+            <p><strong>in</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_346" epub:type="footnote">
+            <p><strong>his</strong></p>
+            <p><em>Base: его</em></p>
+        </aside>
+        
+
+        <aside id="ref_347" epub:type="footnote">
+            <p><strong>It</strong></p>
+            <p><em>Base: она</em></p>
+        </aside>
+        
+
+        <aside id="ref_348" epub:type="footnote">
+            <p><strong>now</strong></p>
+            <p><em>Base: сейчас</em></p>
+        </aside>
+        
+
+        <aside id="ref_349" epub:type="footnote">
+            <p><strong>was reading</strong></p>
+            <p><em>Base: читать</em></p>
+        </aside>
+        
+
+        <aside id="ref_350" epub:type="footnote">
+            <p><strong>the sign</strong></p>
+            <p><em>Base: знак</em></p>
+        </aside>
+        
+
+        <aside id="ref_351" epub:type="footnote">
+            <p><strong>that</strong></p>
+            <p><em>Base: который</em></p>
+        </aside>
+        
+
+        <aside id="ref_352" epub:type="footnote">
+            <p><strong>said</strong></p>
+            <p><em>Base: сказать</em></p>
+        </aside>
+        
+
+        <aside id="ref_353" epub:type="footnote">
+            <p><strong>no</strong></p>
+            <p><em>Base: нет</em></p>
+        </aside>
+        
+
+        <aside id="ref_354" epub:type="footnote">
+            <p><strong>looking</strong></p>
+            <p><em>Base: смотреть</em></p>
+        </aside>
+        
+
+        <aside id="ref_355" epub:type="footnote">
+            <p><strong>at</strong></p>
+            <p><em>Base: на</em></p>
+        </aside>
+        
+
+        <aside id="ref_356" epub:type="footnote">
+            <p><strong>the sign</strong></p>
+            <p><em>Base: знак</em></p>
+        </aside>
+        
+
+        <aside id="ref_357" epub:type="footnote">
+            <p><strong>cats</strong></p>
+            <p><em>Base: кошка</em></p>
+        </aside>
+        
+
+        <aside id="ref_358" epub:type="footnote">
+            <p><strong>couldn’t</strong></p>
             <p><em>Base: не</em></p>
         </aside>
         
 
-        <aside id="ref_288" epub:type="footnote">
+        <aside id="ref_359" epub:type="footnote">
+            <p><strong>could</strong></p>
+            <p><em>Base: может</em></p>
+        </aside>
+        
+
+        <aside id="ref_360" epub:type="footnote">
+            <p><strong>read</strong></p>
+            <p><em>Base: читать</em></p>
+        </aside>
+        
+
+        <aside id="ref_361" epub:type="footnote">
+            <p><strong>maps</strong></p>
+            <p><em>Base: карта</em></p>
+        </aside>
+        
+
+        <aside id="ref_362" epub:type="footnote">
+            <p><strong>or</strong></p>
+            <p><em>Base: или</em></p>
+        </aside>
+        
+
+        <aside id="ref_363" epub:type="footnote">
+            <p><strong>signs</strong></p>
+            <p><em>Base: знак</em></p>
+        </aside>
+        
+
+        <aside id="ref_364" epub:type="footnote">
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
+        </aside>
+        
+
+        <aside id="ref_365" epub:type="footnote">
+            <p><strong>gave</strong></p>
+            <p><em>Base: дал</em></p>
+        </aside>
+        
+
+        <aside id="ref_366" epub:type="footnote">
+            <p><strong>himself</strong></p>
+            <p><em>Base: самостоятельно</em></p>
+        </aside>
+        
+
+        <aside id="ref_367" epub:type="footnote">
+            <p><strong>a little</strong></p>
+            <p><em>Base: небольшой</em></p>
+        </aside>
+        
+
+        <aside id="ref_368" epub:type="footnote">
+            <p><strong>and</strong></p>
+            <p><em>Base: и</em></p>
+        </aside>
+        
+
+        <aside id="ref_369" epub:type="footnote">
+            <p><strong>put</strong></p>
+            <p><em>Base: положить</em></p>
+        </aside>
+        
+
+        <aside id="ref_370" epub:type="footnote">
+            <p><strong>the cat</strong></p>
+            <p><em>Base: кошка</em></p>
+        </aside>
+        
+
+        <aside id="ref_371" epub:type="footnote">
+            <p><strong>out of</strong></p>
+            <p><em>Base: из</em></p>
+        </aside>
+        
+
+        <aside id="ref_372" epub:type="footnote">
+            <p><strong>his</strong></p>
+            <p><em>Base: его</em></p>
+        </aside>
+        
+
+        <aside id="ref_373" epub:type="footnote">
+            <p><strong>mind</strong></p>
+            <p><em>Base: ум</em></p>
+        </aside>
+        
+
+        <aside id="ref_374" epub:type="footnote">
+            <p><strong>As</strong></p>
+            <p><em>Base: как</em></p>
+        </aside>
+        
+
+        <aside id="ref_375" epub:type="footnote">
+            <p><strong>he</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_376" epub:type="footnote">
+            <p><strong>drove</strong></p>
+            <p><em>Base: привод</em></p>
+        </aside>
+        
+
+        <aside id="ref_377" epub:type="footnote">
+            <p><strong>towards</strong></p>
+            <p><em>Base: к</em></p>
+        </aside>
+        
+
+        <aside id="ref_378" epub:type="footnote">
+            <p><strong>town</strong></p>
+            <p><em>Base: город</em></p>
+        </aside>
+        
+
+        <aside id="ref_379" epub:type="footnote">
+            <p><strong>he</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_380" epub:type="footnote">
+            <p><strong>thought</strong></p>
+            <p><em>Base: думать</em></p>
+        </aside>
+        
+
+        <aside id="ref_381" epub:type="footnote">
+            <p><strong>nothing</strong></p>
+            <p><em>Base: ни</em></p>
+        </aside>
+        
+
+        <aside id="ref_382" epub:type="footnote">
+            <p><strong>except</strong></p>
+            <p><em>Base: о</em></p>
+        </aside>
+        
+
+        <aside id="ref_383" epub:type="footnote">
+            <p><strong>nothing except</strong></p>
+            <p><em>Base: чем</em></p>
+        </aside>
+        
+
+        <aside id="ref_384" epub:type="footnote">
+            <p><strong>a large</strong></p>
+            <p><em>Base: большой</em></p>
+        </aside>
+        
+
+        <aside id="ref_385" epub:type="footnote">
+            <p><strong>order</strong></p>
+            <p><em>Base: порядок</em></p>
+        </aside>
+        
+
+        <aside id="ref_386" epub:type="footnote">
+            <p><strong>drills</strong></p>
+            <p><em>Base: сверло</em></p>
+        </aside>
+        
+
+        <aside id="ref_387" epub:type="footnote">
+            <p><strong>he</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_388" epub:type="footnote">
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_389" epub:type="footnote">
+            <p><strong>hoping</strong></p>
+            <p><em>Base: надеяться</em></p>
+        </aside>
+        
+
+        <aside id="ref_390" epub:type="footnote">
+            <p><strong>to get</strong></p>
+            <p><em>Base: получать</em></p>
+        </aside>
+        
+
+        <aside id="ref_391" epub:type="footnote">
+            <p><strong>that</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_392" epub:type="footnote">
             <p><strong>that</strong></p>
             <p><em>Base: это</em></p>
         </aside>
         
 
-        <aside id="ref_289" epub:type="footnote">
+        <aside id="ref_393" epub:type="footnote">
+            <p><strong>day</strong></p>
+            <p><em>Base: день</em></p>
+        </aside>
+        
+
+        <aside id="ref_394" epub:type="footnote">
+            <p><strong>but</strong></p>
+            <p><em>Base: но</em></p>
+        </aside>
+        
+
+        <aside id="ref_395" epub:type="footnote">
+            <p><strong>on</strong></p>
+            <p><em>Base: на</em></p>
+        </aside>
+        
+
+        <aside id="ref_396" epub:type="footnote">
+            <p><strong>edge</strong></p>
+            <p><em>Base: конец</em></p>
+        </aside>
+        
+
+        <aside id="ref_397" epub:type="footnote">
+            <p><strong>of town</strong></p>
+            <p><em>Base: город</em></p>
+        </aside>
+        
+
+        <aside id="ref_398" epub:type="footnote">
+            <p><strong>were</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_399" epub:type="footnote">
+            <p><strong>driven out</strong></p>
+            <p><em>Base: тянуть</em></p>
+        </aside>
+        
+
+        <aside id="ref_400" epub:type="footnote">
+            <p><strong>of</strong></p>
+            <p><em>Base: из</em></p>
+        </aside>
+        
+
+        <aside id="ref_401" epub:type="footnote">
+            <p><strong>his</strong></p>
+            <p><em>Base: его</em></p>
+        </aside>
+        
+
+        <aside id="ref_402" epub:type="footnote">
+            <p><strong>mind</strong></p>
+            <p><em>Base: ум</em></p>
+        </aside>
+        
+
+        <aside id="ref_403" epub:type="footnote">
+            <p><strong>by something</strong></p>
+            <p><em>Base: что</em></p>
+        </aside>
+        
+
+        <aside id="ref_404" epub:type="footnote">
+            <p><strong>else</strong></p>
+            <p><em>Base: другой</em></p>
+        </aside>
+        
+
+        <aside id="ref_405" epub:type="footnote">
+            <p><strong>As</strong></p>
+            <p><em>Base: как</em></p>
+        </aside>
+        
+
+        <aside id="ref_406" epub:type="footnote">
+            <p><strong>he</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_407" epub:type="footnote">
+            <p><strong>sat</strong></p>
+            <p><em>Base: сидеть</em></p>
+        </aside>
+        
+
+        <aside id="ref_408" epub:type="footnote">
+            <p><strong>in</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_409" epub:type="footnote">
+            <p><strong>the usual</strong></p>
+            <p><em>Base: обычно</em></p>
+        </aside>
+        
+
+        <aside id="ref_410" epub:type="footnote">
+            <p><strong>morning</strong></p>
+            <p><em>Base: утро</em></p>
+        </aside>
+        
+
+        <aside id="ref_411" epub:type="footnote">
+            <p><strong>he</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_412" epub:type="footnote">
+            <p><strong>couldn’t</strong></p>
+            <p><em>Base: не</em></p>
+        </aside>
+        
+
+        <aside id="ref_413" epub:type="footnote">
+            <p><strong>couldn’t</strong></p>
+            <p><em>Base: мог</em></p>
+        </aside>
+        
+
+        <aside id="ref_414" epub:type="footnote">
+            <p><strong>noticing</strong></p>
+            <p><em>Base: заметить</em></p>
+        </aside>
+        
+
+        <aside id="ref_415" epub:type="footnote">
+            <p><strong>that</strong></p>
+            <p><em>Base: что</em></p>
+        </aside>
+        
+
+        <aside id="ref_416" epub:type="footnote">
+            <p><strong>there</strong></p>
+            <p><em>Base: там</em></p>
+        </aside>
+        
+
+        <aside id="ref_417" epub:type="footnote">
+            <p><strong>seemed</strong></p>
+            <p><em>Base: кажется</em></p>
+        </aside>
+        
+
+        <aside id="ref_418" epub:type="footnote">
+            <p><strong>to be</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_419" epub:type="footnote">
+            <p><strong>a lot</strong></p>
+            <p><em>Base: много</em></p>
+        </aside>
+        
+
+        <aside id="ref_420" epub:type="footnote">
+            <p><strong>strangely</strong></p>
+            <p><em>Base: странно</em></p>
+        </aside>
+        
+
+        <aside id="ref_421" epub:type="footnote">
+            <p><strong>dressed</strong></p>
+            <p><em>Base: одежда</em></p>
+        </aside>
+        
+
+        <aside id="ref_422" epub:type="footnote">
+            <p><strong>people</strong></p>
+            <p><em>Base: люди</em></p>
+        </aside>
+        
+
+        <aside id="ref_423" epub:type="footnote">
+            <p><strong>about</strong></p>
+            <p><em>Base: круглый</em></p>
+        </aside>
+        
+
+        <aside id="ref_424" epub:type="footnote">
+            <p><strong>People</strong></p>
+            <p><em>Base: люди</em></p>
+        </aside>
+        
+
+        <aside id="ref_425" epub:type="footnote">
+            <p><strong>in</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_426" epub:type="footnote">
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
+        </aside>
+        
+
+        <aside id="ref_427" epub:type="footnote">
+            <p><strong>couldn’t</strong></p>
+            <p><em>Base: не</em></p>
+        </aside>
+        
+
+        <aside id="ref_428" epub:type="footnote">
+            <p><strong>couldn’t</strong></p>
+            <p><em>Base: мог</em></p>
+        </aside>
+        
+
+        <aside id="ref_429" epub:type="footnote">
+            <p><strong>people</strong></p>
+            <p><em>Base: люди</em></p>
+        </aside>
+        
+
+        <aside id="ref_431" epub:type="footnote">
+            <p><strong>dressed</strong></p>
+            <p><em>Base: одежда</em></p>
+        </aside>
+        
+
+        <aside id="ref_432" epub:type="footnote">
+            <p><strong>in</strong></p>
+            <p><em>Base: в</em></p>
+        </aside>
+        
+
+        <aside id="ref_433" epub:type="footnote">
+            <p><strong>funny</strong></p>
+            <p><em>Base: смех</em></p>
+        </aside>
+        
+
+        <aside id="ref_434" epub:type="footnote">
+            <p><strong>clothes</strong></p>
+            <p><em>Base: вещь</em></p>
+        </aside>
+        
+
+        <aside id="ref_435" epub:type="footnote">
+            <p><strong>you</strong></p>
+            <p><em>Base: вы</em></p>
+        </aside>
+        
+
+        <aside id="ref_436" epub:type="footnote">
+            <p><strong>saw</strong></p>
+            <p><em>Base: видеть</em></p>
+        </aside>
+        
+
+        <aside id="ref_437" epub:type="footnote">
+            <p><strong>on</strong></p>
+            <p><em>Base: на</em></p>
+        </aside>
+        
+
+        <aside id="ref_438" epub:type="footnote">
+            <p><strong>young</strong></p>
+            <p><em>Base: молодой</em></p>
+        </aside>
+        
+
+        <aside id="ref_439" epub:type="footnote">
+            <p><strong>people</strong></p>
+            <p><em>Base: люди</em></p>
+        </aside>
+        
+
+        <aside id="ref_440" epub:type="footnote">
+            <p><strong>He</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_441" epub:type="footnote">
+            <p><strong>supposed</strong></p>
+            <p><em>Base: предположить</em></p>
+        </aside>
+        
+
+        <aside id="ref_442" epub:type="footnote">
+            <p><strong>this</strong></p>
+            <p><em>Base: это</em></p>
+        </aside>
+        
+
+        <aside id="ref_443" epub:type="footnote">
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_444" epub:type="footnote">
+            <p><strong>some</strong></p>
+            <p><em>Base: некоторые</em></p>
+        </aside>
+        
+
+        <aside id="ref_445" epub:type="footnote">
+            <p><strong>stupid</strong></p>
+            <p><em>Base: глупый</em></p>
+        </aside>
+        
+
+        <aside id="ref_446" epub:type="footnote">
+            <p><strong>new</strong></p>
+            <p><em>Base: новый</em></p>
+        </aside>
+        
+
+        <aside id="ref_447" epub:type="footnote">
+            <p><strong>fashion</strong></p>
+            <p><em>Base: мода</em></p>
+        </aside>
+        
+
+        <aside id="ref_448" epub:type="footnote">
+            <p><strong>He</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_449" epub:type="footnote">
+            <p><strong>drummed</strong></p>
+            <p><em>Base: нажмите</em></p>
+        </aside>
+        
+
+        <aside id="ref_450" epub:type="footnote">
+            <p><strong>his</strong></p>
+            <p><em>Base: его</em></p>
+        </aside>
+        
+
+        <aside id="ref_451" epub:type="footnote">
+            <p><strong>fingers</strong></p>
+            <p><em>Base: рука</em></p>
+        </aside>
+        
+
+        <aside id="ref_452" epub:type="footnote">
+            <p><strong>on</strong></p>
+            <p><em>Base: на</em></p>
+        </aside>
+        
+
+        <aside id="ref_453" epub:type="footnote">
+            <p><strong>steering</strong></p>
+            <p><em>Base: колеса</em></p>
+        </aside>
+        
+
+        <aside id="ref_454" epub:type="footnote">
+            <p><strong>wheel</strong></p>
+            <p><em>Base: колеса</em></p>
+        </aside>
+        
+
+        <aside id="ref_455" epub:type="footnote">
+            <p><strong>and</strong></p>
+            <p><em>Base: и</em></p>
+        </aside>
+        
+
+        <aside id="ref_456" epub:type="footnote">
+            <p><strong>his</strong></p>
+            <p><em>Base: его</em></p>
+        </aside>
+        
+
+        <aside id="ref_457" epub:type="footnote">
+            <p><strong>eyes</strong></p>
+            <p><em>Base: глаз</em></p>
+        </aside>
+        
+
+        <aside id="ref_458" epub:type="footnote">
+            <p><strong>fell</strong></p>
+            <p><em>Base: падать</em></p>
+        </aside>
+        
+
+        <aside id="ref_459" epub:type="footnote">
+            <p><strong>on</strong></p>
+            <p><em>Base: на</em></p>
+        </aside>
+        
+
+        <aside id="ref_460" epub:type="footnote">
+            <p><strong>of these</strong></p>
+            <p><em>Base: эти</em></p>
+        </aside>
+        
+
+        <aside id="ref_461" epub:type="footnote">
+            <p><strong>standing</strong></p>
+            <p><em>Base: стоять</em></p>
+        </aside>
+        
+
+        <aside id="ref_462" epub:type="footnote">
+            <p><strong>quite</strong></p>
+            <p><em>Base: достаточно</em></p>
+        </aside>
+        
+
+        <aside id="ref_463" epub:type="footnote">
+            <p><strong>close</strong></p>
+            <p><em>Base: близко</em></p>
+        </aside>
+        
+
+        <aside id="ref_464" epub:type="footnote">
+            <p><strong>by</strong></p>
+            <p><em>Base: сторона</em></p>
+        </aside>
+        
+
+        <aside id="ref_465" epub:type="footnote">
+            <p><strong>They</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_466" epub:type="footnote">
+            <p><strong>were</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_467" epub:type="footnote">
+            <p><strong>whispering</strong></p>
+            <p><em>Base: голос</em></p>
+        </aside>
+        
+
+        <aside id="ref_468" epub:type="footnote">
+            <p><strong>together</strong></p>
+            <p><em>Base: вместе</em></p>
+        </aside>
+        
+
+        <aside id="ref_469" epub:type="footnote">
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
+        </aside>
+        
+
+        <aside id="ref_470" epub:type="footnote">
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_471" epub:type="footnote">
+            <p><strong>to see</strong></p>
+            <p><em>Base: видеть</em></p>
+        </aside>
+        
+
+        <aside id="ref_472" epub:type="footnote">
+            <p><strong>that</strong></p>
+            <p><em>Base: что</em></p>
+        </aside>
+        
+
+        <aside id="ref_473" epub:type="footnote">
+            <p><strong>a couple</strong></p>
+            <p><em>Base: два</em></p>
+        </aside>
+        
+
+        <aside id="ref_474" epub:type="footnote">
+            <p><strong>of</strong></p>
+            <p><em>Base: из</em></p>
+        </aside>
+        
+
+        <aside id="ref_475" epub:type="footnote">
+            <p><strong>them</strong></p>
+            <p><em>Base: их</em></p>
+        </aside>
+        
+
+        <aside id="ref_476" epub:type="footnote">
+            <p><strong>weren’t</strong></p>
+            <p><em>Base: не</em></p>
+        </aside>
+        
+
+        <aside id="ref_477" epub:type="footnote">
+            <p><strong>young</strong></p>
+            <p><em>Base: молодой</em></p>
+        </aside>
+        
+
+        <aside id="ref_478" epub:type="footnote">
+            <p><strong>at all</strong></p>
+            <p><em>Base: весь</em></p>
+        </aside>
+        
+
+        <aside id="ref_479" epub:type="footnote">
+            <p><strong>why</strong></p>
+            <p><em>Base: почему</em></p>
+        </aside>
+        
+
+        <aside id="ref_480" epub:type="footnote">
+            <p><strong>that</strong></p>
+            <p><em>Base: это</em></p>
+        </aside>
+        
+
+        <aside id="ref_481" epub:type="footnote">
+            <p><strong>man</strong></p>
+            <p><em>Base: человек</em></p>
+        </aside>
+        
+
+        <aside id="ref_482" epub:type="footnote">
+            <p><strong>had</strong></p>
+            <p><em>Base: должны</em></p>
+        </aside>
+        
+
+        <aside id="ref_483" epub:type="footnote">
+            <p><strong>to be</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_484" epub:type="footnote">
+            <p><strong>older</strong></p>
+            <p><em>Base: старый</em></p>
+        </aside>
+        
+
+        <aside id="ref_485" epub:type="footnote">
+            <p><strong>than</strong></p>
+            <p><em>Base: чем</em></p>
+        </aside>
+        
+
+        <aside id="ref_486" epub:type="footnote">
+            <p><strong>he</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_487" epub:type="footnote">
+            <p><strong>was</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_488" epub:type="footnote">
+            <p><strong>and</strong></p>
+            <p><em>Base: и</em></p>
+        </aside>
+        
+
+        <aside id="ref_489" epub:type="footnote">
+            <p><strong>wearing</strong></p>
+            <p><em>Base: нести</em></p>
+        </aside>
+        
+
+        <aside id="ref_490" epub:type="footnote">
+            <p><strong>emerald-green</strong></p>
+            <p><em>Base: зеленый</em></p>
+        </aside>
+        
+
+        <aside id="ref_491" epub:type="footnote">
+            <p><strong>of</strong></p>
+            <p><em>Base: из</em></p>
+        </aside>
+        
+
+        <aside id="ref_492" epub:type="footnote">
+            <p><strong>him</strong></p>
+            <p><em>Base: он</em></p>
+        </aside>
+        
+
+        <aside id="ref_493" epub:type="footnote">
+            <p><strong>But</strong></p>
+            <p><em>Base: но</em></p>
+        </aside>
+        
+
+        <aside id="ref_494" epub:type="footnote">
+            <p><strong>then</strong></p>
+            <p><em>Base: затем</em></p>
+        </aside>
+        
+
+        <aside id="ref_495" epub:type="footnote">
             <p><strong>it</strong></p>
             <p><em>Base: это</em></p>
         </aside>
         
 
-        <aside id="ref_290" epub:type="footnote">
-            <p><strong>not</strong></p>
-            <p><em>Base: не</em></p>
+        <aside id="ref_496" epub:type="footnote">
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
         </aside>
         
 
-        <aside id="ref_291" epub:type="footnote">
+        <aside id="ref_497" epub:type="footnote">
             <p><strong>that</strong></p>
             <p><em>Base: что</em></p>
         </aside>
         
 
-        <aside id="ref_292" epub:type="footnote">
-            <p><strong>been</strong></p>
+        <aside id="ref_498" epub:type="footnote">
+            <p><strong>this</strong></p>
+            <p><em>Base: это</em></p>
+        </aside>
+        
+
+        <aside id="ref_499" epub:type="footnote">
+            <p><strong>was</strong></p>
             <p><em>Base: быть</em></p>
         </aside>
         
 
-        <aside id="ref_293" epub:type="footnote">
+        <aside id="ref_500" epub:type="footnote">
+            <p><strong>some</strong></p>
+            <p><em>Base: некоторые</em></p>
+        </aside>
+        
+
+        <aside id="ref_501" epub:type="footnote">
+            <p><strong>these</strong></p>
+            <p><em>Base: эти</em></p>
+        </aside>
+        
+
+        <aside id="ref_502" epub:type="footnote">
+            <p><strong>people</strong></p>
+            <p><em>Base: люди</em></p>
+        </aside>
+        
+
+        <aside id="ref_503" epub:type="footnote">
+            <p><strong>were</strong></p>
+            <p><em>Base: быть</em></p>
+        </aside>
+        
+
+        <aside id="ref_504" epub:type="footnote">
+            <p><strong>obviously</strong></p>
+            <p><em>Base: ясно</em></p>
+        </aside>
+        
+
+        <aside id="ref_505" epub:type="footnote">
+            <p><strong>collecting</strong></p>
+            <p><em>Base: получать</em></p>
+        </aside>
+        
+
+        <aside id="ref_506" epub:type="footnote">
+            <p><strong>for</strong></p>
+            <p><em>Base: для</em></p>
+        </aside>
+        
+
+        <aside id="ref_507" epub:type="footnote">
+            <p><strong>something</strong></p>
+            <p><em>Base: что</em></p>
+        </aside>
+        
+
+        <aside id="ref_508" epub:type="footnote">
+            <p><strong>yes</strong></p>
+            <p><em>Base: да</em></p>
+        </aside>
+        
+
+        <aside id="ref_509" epub:type="footnote">
+            <p><strong>that</strong></p>
+            <p><em>Base: это</em></p>
+        </aside>
+        
+
+        <aside id="ref_510" epub:type="footnote">
+            <p><strong>would be</strong></p>
+            <p><em>Base: будет</em></p>
+        </aside>
+        
+
+        <aside id="ref_511" epub:type="footnote">
+            <p><strong>it</strong></p>
+            <p><em>Base: это</em></p>
+        </aside>
+        
+
+        <aside id="ref_512" epub:type="footnote">
+            <p><strong>The traffic</strong></p>
+            <p><em>Base: движение</em></p>
+        </aside>
+        
+
+        <aside id="ref_513" epub:type="footnote">
+            <p><strong>on</strong></p>
+            <p><em>Base: на</em></p>
+        </aside>
+        
+
+        <aside id="ref_514" epub:type="footnote">
             <p><strong>and</strong></p>
             <p><em>Base: и</em></p>
         </aside>
         
 
-        <aside id="ref_294" epub:type="footnote">
-            <p><strong>been</strong></p>
-            <p><em>Base: быть</em></p>
+        <aside id="ref_515" epub:type="footnote">
+            <p><strong>a few</strong></p>
+            <p><em>Base: несколько</em></p>
         </aside>
         
 
-        <aside id="ref_295" epub:type="footnote">
-            <p><strong>me</strong></p>
-            <p><em>Base: мне</em></p>
+        <aside id="ref_516" epub:type="footnote">
+            <p><strong>minutes</strong></p>
+            <p><em>Base: минут</em></p>
         </aside>
         
 
-        <aside id="ref_296" epub:type="footnote">
-            <p><strong>that</strong></p>
-            <p><em>Base: что</em></p>
+        <aside id="ref_517" epub:type="footnote">
+            <p><strong>later</strong></p>
+            <p><em>Base: поздно</em></p>
         </aside>
         
 
-        <aside id="ref_297" epub:type="footnote">
-            <p><strong>I</strong></p>
-            <p><em>Base: я</em></p>
+        <aside id="ref_518" epub:type="footnote">
+            <p><strong>Mr</strong></p>
+            <p><em>Base: мистер</em></p>
         </aside>
         
 
-        <aside id="ref_298" epub:type="footnote">
-            <p><strong>been</strong></p>
-            <p><em>Base: быть</em></p>
+        <aside id="ref_519" epub:type="footnote">
+            <p><strong>arrived</strong></p>
+            <p><em>Base: приходить</em></p>
         </aside>
         
-    </section>
 
-    <div id="test-popup">
-        <div id="popup-content"></div>
-        <button onclick="document.getElementById('test-popup').style.display='none'" style="margin-top:10px;">Close</button>
-    </div>
+        <aside id="ref_520" epub:type="footnote">
+            <p><strong>in</strong></p>
+            <p><em>Base: на</em></p>
+        </aside>
+        
 
-    <script>
-        // Find all Russian links
-        const links = document.querySelectorAll('a.ru');
-        const popup = document.getElementById('test-popup');
-        const popupContent = document.getElementById('popup-content');
+        <aside id="ref_521" epub:type="footnote">
+            <p><strong>car</strong></p>
+            <p><em>Base: машина</em></p>
+        </aside>
+        
 
-        links.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault(); // Stop the page from jumping
-                
-                // 1. Get the ID (e.g., "#ref_1" -> "ref_1")
-                const targetId = this.getAttribute('href').substring(1);
-                
-                // 2. Find the hidden footnote with that ID
-                const footnote = document.getElementById(targetId);
-                
-                if (footnote) {
-                    // 3. Copy text to our fake popup
-                    popupContent.innerHTML = footnote.innerHTML;
-                    popup.style.display = 'block';
-                }
+        <aside id="ref_522" epub:type="footnote">
+            <p><strong>his</strong></p>
+            <p><em>Base: его</em></p>
+        </aside>
+        
+
+        <aside id="ref_523" epub:type="footnote">
+            <p><strong>mind</strong></p>
+            <p><em>Base: ум</em></p>
+        </aside>
+        
+
+        <aside id="ref_524" epub:type="footnote">
+            <p><strong>back</strong></p>
+            <p><em>Base: назад</em></p>
+        </aside>
+        
+
+        <aside id="ref_525" epub:type="footnote">
+            <p><strong>on</strong></p>
+            <p><em>Base: на</em></p>
+        </aside>
+        
+        </section>
+
+        <div id="test-popup">
+            <div id="popup-content"></div>
+            <button onclick="document.getElementById('test-popup').style.display='none'" style="margin-top:10px;">Close</button>
+        </div>
+
+        <script>
+            // Find all Russian links
+            const links = document.querySelectorAll('a.ru');
+            const popup = document.getElementById('test-popup');
+            const popupContent = document.getElementById('popup-content');
+
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // Stop the page from jumping
+                    
+                    // 1. Get the ID (e.g., "#ref_1" -> "ref_1")
+                    const targetId = this.getAttribute('href').substring(1);
+                    
+                    // 2. Find the hidden footnote with that ID
+                    const footnote = document.getElementById(targetId);
+                    
+                    if (footnote) {
+                        // 3. Copy text to our fake popup
+                        popupContent.innerHTML = footnote.innerHTML;
+                        popup.style.display = 'block';
+                    }
+                });
             });
-        });
-    </script>
+        </script>
 
-</body>
-</html>
+    </body>
+    </html>
+    
