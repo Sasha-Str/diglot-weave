@@ -108,7 +108,7 @@ def chunk_txt_safely(text, max_chars=10000):
 
 def save_chunks(chunks, save_path):
     job_data = []
-    for i, chunk in enumerate(all_chunks):
+    for i, chunk in enumerate(chunks):
         job_item = {
             "id": i,
             "source_file": chunk['file_name'],
